@@ -13515,14 +13515,28 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8296172667438235891, guid: 306ce1c9c70a86943911d8de15afdeb5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 306ce1c9c70a86943911d8de15afdeb5, type: 3}
---- !u!4 &915975300 stripped
+--- !u!4 &915975300
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -3466784256967063398, guid: 09e74d2963021714bb95afb7a61b32b4,
     type: 3}
   m_PrefabInstance: {fileID: 1281716835}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964265766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1281716836}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &921994630
 Mesh:
   m_ObjectHideFlags: 0
@@ -14504,11 +14518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: a4bfb60778dea134b816bf00cc7b05a4, type: 2}
-  isGlobal: 0
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14521,54 +14530,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 963194228}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
+--- !u!1 &964265766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1281716835}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 915975300}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!43 &970468605
 Mesh:
   m_ObjectHideFlags: 0
@@ -19336,16 +19313,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1966306495}
     m_Modifications:
-    - target: {fileID: -8197434237575275087, guid: 09e74d2963021714bb95afb7a61b32b4,
-        type: 3}
-      propertyPath: m_Name
-      value: clockVector
-      objectReference: {fileID: 0}
-    - target: {fileID: -8197434237575275087, guid: 09e74d2963021714bb95afb7a61b32b4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: -3466784256967063398, guid: 09e74d2963021714bb95afb7a61b32b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19416,9 +19383,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 58.697926
       objectReference: {fileID: 0}
+    - target: {fileID: -8197434237575275087, guid: 09e74d2963021714bb95afb7a61b32b4,
+        type: 3}
+      propertyPath: m_Name
+      value: clockVector
+      objectReference: {fileID: 0}
+    - target: {fileID: -8197434237575275087, guid: 09e74d2963021714bb95afb7a61b32b4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 7243324766535440047, guid: 09e74d2963021714bb95afb7a61b32b4,
     type: 3}
+--- !u!4 &1281716836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1281716835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616634229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 915975300}
+  m_Father: {fileID: 1966306495}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1292002805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22922,6 +22914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigMikeRun
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_Controller
@@ -23928,6 +23925,22 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1616634229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1281716835}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281716836}
+  m_Layer: 0
+  m_Name: clockVector (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1639991825
 GameObject:
   m_ObjectHideFlags: 0
@@ -29169,7 +29182,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 643939223}
-  - {fileID: 915975300}
+  - {fileID: 1281716836}
   - {fileID: 1056319401}
   - {fileID: 593756693}
   m_Father: {fileID: 0}
