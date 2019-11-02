@@ -28,7 +28,7 @@ public class TimerGameOver : MonoBehaviour
         }else
         {
             FindObjectOfType<GameManager>().EndGame();
-            timerUI.text = "Game Over";
+            timerUI.text = "00:00";
             
         }
 
