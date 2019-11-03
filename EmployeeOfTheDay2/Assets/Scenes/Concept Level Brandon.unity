@@ -22751,6 +22751,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigMikeRun
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_Controller
