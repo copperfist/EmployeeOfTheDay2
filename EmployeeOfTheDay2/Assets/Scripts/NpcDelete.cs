@@ -20,6 +20,7 @@ public class NpcDelete : MonoBehaviour
             Destroy(other.gameObject);
 
             Instantiate(npcPrefab, spawnpoints.position, spawnpoints.rotation);
+            ScoreManager.score += 100;
         }
     }
 }
