@@ -70,14 +70,16 @@ public class Movement : MonoBehaviour
         transform.Translate(newPosition * movementSpeed * Time.deltaTime, Space.World);
     }
 
+
     private void OnTriggerStay(Collider other)
     {
+
         item = other.gameObject;
         rb = item.GetComponent<Rigidbody>();
 
         if (item.tag == "Cube")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {                
                 if (isAPressed == false)
                 {
