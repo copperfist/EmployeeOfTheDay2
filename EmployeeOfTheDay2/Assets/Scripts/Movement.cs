@@ -14,6 +14,10 @@ public class Movement : MonoBehaviour
     public float throwForce = 10.0f;
     public Animator playerAnimator;
 
+    public string horizontalCtrl = "Horizontal_P1";
+    public string verticalCtrl = "Vertical_P1";
+    public string interactCtrl = "Interact_P1";
+
     private Rigidbody rb;
     private Rigidbody playerRb;
 
@@ -35,7 +39,7 @@ public class Movement : MonoBehaviour
 
     void PlayerAnimation()
     {
-        if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
+        if (Input.GetAxis(verticalCtrl) == 0 && Input.GetAxis(horizontalCtrl) == 0)
         {
             playerAnimator.SetBool("Moving", false);
         }
@@ -56,10 +60,10 @@ public class Movement : MonoBehaviour
         }
     }
 
-    void PlayerMovement()
+    public void PlayerMovement()
     {
-        float moveVertical = Input.GetAxis("Vertical");
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis(verticalCtrl);
+        float moveHorizontal = Input.GetAxis(horizontalCtrl);
 
         Vector3 newPosition = new Vector3(moveHorizontal, 0.0f, moveVertical);
         transform.LookAt(newPosition + transform.position);
