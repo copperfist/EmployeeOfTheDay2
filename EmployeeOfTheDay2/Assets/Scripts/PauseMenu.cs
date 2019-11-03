@@ -20,6 +20,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
+                Debug.Log("GAME IS NOT PAUSED");
                 Resume();
                 AudioListener.pause = false;
                 
