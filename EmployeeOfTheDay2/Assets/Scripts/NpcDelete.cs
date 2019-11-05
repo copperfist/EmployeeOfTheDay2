@@ -6,10 +6,6 @@ public class NpcDelete : MonoBehaviour
 {
     public GameObject npcPrefab;
     public Transform spawnpoints;
-    private void Start()
-    {
-        Instantiate(npcPrefab, spawnpoints.position, spawnpoints.rotation);
-    }
 
     private void OnTriggerEnter(Collider other)
     {

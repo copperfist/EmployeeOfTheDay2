@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCQueue : MonoBehaviour
+public class NpcMovement : MonoBehaviour
 {
+    public GameObject npcPrefab;
+    public Transform spawnpoints;
+
     public GameObject seat1;
     public GameObject exit;
     public float speed = 2.0f;
@@ -14,7 +17,6 @@ public class NPCQueue : MonoBehaviour
 
     private void Start()
     {
-
         products = GameObject.FindGameObjectsWithTag("Product");
         seat1 = GameObject.FindGameObjectWithTag("Queue");
         exit = GameObject.FindGameObjectWithTag("Exit");
@@ -22,6 +24,7 @@ public class NPCQueue : MonoBehaviour
 
         ShoppingList();
     }
+
     private void Update()
     {
         MoveToTill();
