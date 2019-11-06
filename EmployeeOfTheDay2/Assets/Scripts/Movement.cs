@@ -77,7 +77,7 @@ public class Movement : MonoBehaviour
         item = other.gameObject;
         rb = item.GetComponent<Rigidbody>();
 
-        if (item.tag == "Cube")
+        if (item.tag == "Banana" || item.tag == "Bread" || item.tag == "Ham" || item.tag == "Onion" || item.tag == "Tomato" || item.tag == "Soup")
         {
             if (Input.GetButton(interactCtrl))
             {                

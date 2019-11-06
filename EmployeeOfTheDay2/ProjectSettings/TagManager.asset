@@ -13,6 +13,8 @@ TagManager:
   - Onion
   - Tomato
   - Soup
+  - Entrance
+  - PaperBag
   layers:
   - Default
   - TransparentFX
