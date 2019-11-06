@@ -5,12 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cube
-  - targets
-  - PayAndLeave
   - NPC
   - Exit
-  - Seating
-  - Seats
+  - Banana
+  - Bread
+  - Ham
+  - Onion
+  - Tomato
+  - Soup
   layers:
   - Default
   - TransparentFX
