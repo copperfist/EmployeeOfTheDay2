@@ -12,17 +12,17 @@ public class PaperBag : MonoBehaviour
     //Picking items for the bag
     public string[] products = new string[6]; //Holds all product tags
     private int randomIndex;
-    private string chosenItem;
+    public string chosenItem;
 
     //Waiting till the bag is full before giving points
     private int itemsInBag = 0;
     private int shoppingList;
 
-    public bool makeBag = false;
-
+    public static bool BagIsFull = false;
+    
     public int points = 0;
     private void Start()
-    {
+    {        
         entrance = GameObject.FindGameObjectWithTag("Entrance");
 
         Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
@@ -30,12 +30,7 @@ public class PaperBag : MonoBehaviour
         MyList();
         FindProducts();
     }
-
-    private void Update()
-    {
-  
-    }
-
+    
     private void FindProducts() //Picks a random tag for item
     {
         randomIndex = Random.Range(0, products.Length);
@@ -56,17 +51,34 @@ public class PaperBag : MonoBehaviour
             itemsInBag++;
             Destroy(other.gameObject);//Destory item
 
-            FindProducts();
-
             if (itemsInBag >= shoppingList)//Shopping list full
             {
+                itemsInBag = 0;
                 points += 10;
+
                 Debug.Log("Shopping Bag Full");
 
-                makeBag = true;
-
+                CheckPaperBag();
             }
+            else
+            {
+                BagIsFull = false;
+                FindProducts();
+            }
+
+
         }
 
+    }
+
+    public void CheckPaperBag()
+    {
+        Debug.Log("Checking Paper Bag");
+
+        BagIsFull = true;
+
+        Debug.Log(BagIsFull);
+
+        //Destroy(gameObject, 5f);
     }
 }

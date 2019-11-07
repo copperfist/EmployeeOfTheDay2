@@ -7,26 +7,42 @@ public class SpawnPaperBag : MonoBehaviour
     public GameObject paperBag;
     private GameObject paperBagClone;
 
-    private bool isBagFull;
+    private bool makeNewBag = false;
 
     void Start()
     {
         SpawnBag();
-
-        isBagFull = GameObject.Find("PaperBag(Clone)").GetComponent<PaperBag>().makeBag;
-
     }
 
-    private void Update()
+    public void Update()
     {
-        if (isBagFull == true)
+        makeNewBag = PaperBag.BagIsFull;
+
+        if (makeNewBag == true)
         {
-            SpawnBag();
+            StartCoroutine(SpawnNewBag());
+
+            PaperBag.BagIsFull = false;
         }
     }
     public void SpawnBag()
     {
+        PaperBag.BagIsFull = false;
+
         paperBagClone = Instantiate(paperBag, transform.position, transform.rotation);
+
+    }
+
+    public IEnumerator SpawnNewBag()
+    {
+
+        Debug.Log("Making a new bag");
+
+        Destroy(paperBagClone);
+
+        yield return new WaitForSeconds(2);
+
+        SpawnBag();
     }
 
 }
