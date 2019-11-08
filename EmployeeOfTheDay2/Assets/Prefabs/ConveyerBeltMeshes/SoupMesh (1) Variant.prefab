@@ -42,9 +42,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 7067569201823656393, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
-  - {fileID: 7998215050380879029, guid: 4b40965b30486364a80b04e8022d8e7e, type: 3}
-  - {fileID: 1730637720994419271, guid: 7850ba5c275120248b228413f39c438b, type: 3}
+  - {fileID: 6064222358031737875, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
   speed: 2
 --- !u!1001 &5653062802281874620
 PrefabInstance:

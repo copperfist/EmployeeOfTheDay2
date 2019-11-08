@@ -29,6 +29,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.47
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2961341398957986537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8414643401449398599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 6064222358031737875, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
+  speed: 2
 --- !u!114 &328962258
 MonoBehaviour:
   m_ObjectHideFlags: 0
