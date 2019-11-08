@@ -41,8 +41,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 6064222358031737875, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
+  target:
+  - {fileID: 1872387547802190305, guid: 497d21c765d75994d9e6e23f7eeee65f, type: 3}
+  - {fileID: 8332108395623687190, guid: 30a8f2a549228004e9b42f5d77d8ba04, type: 3}
+  - {fileID: 6610129042009481424, guid: 9553c7743b0ea3040a32adf1f590518b, type: 3}
   speed: 2
 --- !u!1001 &5653062802281874620
 PrefabInstance:
