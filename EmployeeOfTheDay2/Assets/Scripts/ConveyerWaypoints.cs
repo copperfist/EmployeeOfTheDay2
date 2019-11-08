@@ -11,20 +11,34 @@ public class ConveyerWaypoints : MonoBehaviour
     float WPradius = 1;
     //public GameObject trigger; 
 
-    void Update()
+
+
+    void OnCollisionStay(Collision collision)
     {
-        if (Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)  
+        //Check if object meets conveyor belt
+        if (collision.gameObject.name == "ConveyorMesh")
         {
-            
-             current++;
-             if (current >= waypoints.Length)
+
+            //Debug.Log("collision with conveyor belt");
+
+            if (Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)
+            {
+                Debug.Log("moving to waypoint");
+                current++;
+                if (current >= waypoints.Length)
                 {
                     Destroy(gameObject);
+                }
+
+
             }
-            
-          
+
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * speed);
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * speed);
+
+    
+
     }
+
 }
