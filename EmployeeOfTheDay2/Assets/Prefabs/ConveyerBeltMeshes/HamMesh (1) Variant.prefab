@@ -47,6 +47,18 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &-6475229050231076795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300675588104501499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86d484a6faeaf549bcb068d7d5a3d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7839721678256923122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57,7 +69,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a7d0c741a8c29fa478807121e896ed3f,
         type: 3}
       propertyPath: m_Name
-      value: HamMesh (1)
+      value: HamMesh (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: a7d0c741a8c29fa478807121e896ed3f,
         type: 3}

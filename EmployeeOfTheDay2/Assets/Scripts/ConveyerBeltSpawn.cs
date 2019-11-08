@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConveyerBelt : MonoBehaviour
+public class ConveyerBeltSpawn : MonoBehaviour
 {
     //prefabs
     public GameObject banana, bread, ham, onion, soup, tomato;
