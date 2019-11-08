@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &572127697
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466860441887172298}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a2743e6677f997a4ea5e4726e68b6de9, type: 3}
+  m_Controller: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed by
+    Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
+    'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform 'Character1_Ctrl_RightArm'\n\tTransform
+    'Character1_Ctrl_LeftLeg'\n\tTransform 'Character1_Ctrl_LeftFoot'\n\tTransform
+    'Character1_Ctrl_RightHand'\n\tTransform 'Character1_Ctrl_RightUpLeg'\n\tTransform
+    'Character1_Ctrl_RightForeArm'\n\tand more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom
+    animation clip 'Anim_Run'\n\tFrom animation clip 'Anim_IdleHold'\n\tFrom animation
+    clip 'Anim_RunHold'"
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8632627387863571552
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,7 +61,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8632627388242355434}
-  - {fileID: 4050049565601302477}
+  - {fileID: 839393836118250713}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -116,7 +143,7 @@ MonoBehaviour:
   guide: {fileID: 8632627388242355434}
   item: {fileID: 0}
   throwForce: 200
-  playerAnimator: {fileID: 0}
+  playerAnimator: {fileID: 572127697}
   horizontalCtrl: Horizontal_P1
   verticalCtrl: Vertical_P1
   interactCtrl: Interact_P1
@@ -180,7 +207,7 @@ Transform:
   m_Father: {fileID: 8632627387863571581}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &9029187639151799511
+--- !u!1001 &5682580595425853379
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -192,11 +219,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonkE_Rig
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: ca254a3705c3bb045bf0b17c7887053c,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e975e34d91e4826448d736769e650a14, type: 2}
     - target: {fileID: -4216859302048453862, guid: ca254a3705c3bb045bf0b17c7887053c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -205,7 +227,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ca254a3705c3bb045bf0b17c7887053c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.034
+      value: -1.0460001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ca254a3705c3bb045bf0b17c7887053c,
         type: 3}
@@ -252,12 +274,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -6057140222963153312, guid: ca254a3705c3bb045bf0b17c7887053c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca254a3705c3bb045bf0b17c7887053c, type: 3}
---- !u!4 &4050049565601302477 stripped
+--- !u!1 &4466860441887172298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ca254a3705c3bb045bf0b17c7887053c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5682580595425853379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &839393836118250713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ca254a3705c3bb045bf0b17c7887053c,
     type: 3}
-  m_PrefabInstance: {fileID: 9029187639151799511}
+  m_PrefabInstance: {fileID: 5682580595425853379}
   m_PrefabAsset: {fileID: 0}
