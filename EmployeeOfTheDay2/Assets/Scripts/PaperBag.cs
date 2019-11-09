@@ -78,7 +78,5 @@ public class PaperBag : MonoBehaviour
         BagIsFull = true;
 
         Debug.Log(BagIsFull);
-
-        //Destroy(gameObject, 5f);
     }
 }
