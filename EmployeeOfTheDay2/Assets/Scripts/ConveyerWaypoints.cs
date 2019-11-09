@@ -34,11 +34,11 @@ public class ConveyerWaypoints : MonoBehaviour
                 float dist = Vector3.Distance(target[current].transform.position, transform.position);
 
                 //Debug.Log(transform.position.x.ToString());
-                if (dist < 0.3) 
+                if (dist < 0.2) 
                 {
                     current++;
-                   // Debug.Log("next");
-                   // Debug.Log(current);
+                    Debug.Log("next");
+                    Debug.Log(current);
                 }
 
                 if(current == 3)
