@@ -9,17 +9,20 @@ public class SpawnPaperBag : MonoBehaviour
 
     private bool makeNewBag = false;
 
+
+
     void Start()
     {
         SpawnBag();
     }
+    
 
     public void Update()
     {
         makeNewBag = PaperBag.BagIsFull;
-
         if (makeNewBag == true)
-        {
+        {            
+
             StartCoroutine(SpawnNewBag());
 
             PaperBag.BagIsFull = false;

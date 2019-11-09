@@ -79,7 +79,7 @@ public class Movement : MonoBehaviour
 
         if (item.tag == "Banana" || item.tag == "Bread" || item.tag == "Ham" || item.tag == "Onion" || item.tag == "Tomato" || item.tag == "Soup")
         {
-            if (Input.GetButton(interactCtrl))
+            if (Input.GetButton(interactCtrl)) //Picking up and dropping objects
             {                
                 if (isAPressed == false)
                 {
