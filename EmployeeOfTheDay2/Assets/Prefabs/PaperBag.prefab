@@ -223,8 +223,16 @@ MonoBehaviour:
   - Onion
   - Tomato
   - Soup
-  shoppingBagFull: 0
+  chosenItem: 
   points: 0
+  banana: {fileID: 21300000, guid: 7bff6b522ebd283478ed63b0ae0a21eb, type: 3}
+  bread: {fileID: 21300000, guid: d516cdc43b2227b449dcb5c3091bb03a, type: 3}
+  ham: {fileID: 21300000, guid: 9f9fc4209ac76f646af89e964784764d, type: 3}
+  onion: {fileID: 21300000, guid: 9e043a6cfccdd194195a655f1172c96e, type: 3}
+  soup: {fileID: 21300000, guid: b6b9f392abe1d1644a2712c61dcf3a43, type: 3}
+  tomato: {fileID: 21300000, guid: f09ace31e694aa34b9f05e565919438f, type: 3}
+  uiHolder: {fileID: 4873295300700129133, guid: 629a867a0796800448ce6bd985c792a3,
+    type: 3}
 --- !u!114 &499146712766390673
 MonoBehaviour:
   m_ObjectHideFlags: 0

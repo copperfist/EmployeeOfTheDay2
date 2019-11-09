@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PaperBag : MonoBehaviour
 {
@@ -21,6 +22,17 @@ public class PaperBag : MonoBehaviour
     public static bool BagIsFull = false;
     
     public int points = 0;
+
+    //List of UI items
+    public Sprite banana;
+    public Sprite bread;
+    public Sprite ham;
+    public Sprite onion;
+    public Sprite soup;
+    public Sprite tomato;
+
+    public Image uiHolder; //This will be changing
+
     private void Start()
     {        
         entrance = GameObject.FindGameObjectWithTag("Entrance");
@@ -35,6 +47,7 @@ public class PaperBag : MonoBehaviour
     {
         randomIndex = Random.Range(0, products.Length);
         chosenItem = products[randomIndex];
+        Item_UI();
 
         Debug.Log(chosenItem); //The chosen tag. This needs to be displayed in UI
     }
@@ -70,7 +83,6 @@ public class PaperBag : MonoBehaviour
         }
 
     }
-
     public void CheckPaperBag()
     {
         Debug.Log("Checking Paper Bag");
@@ -78,5 +90,35 @@ public class PaperBag : MonoBehaviour
         BagIsFull = true;
 
         Debug.Log(BagIsFull);
+    }
+
+    public void Item_UI()//Check which item is picked and display correct ui
+    {
+        if(chosenItem == "Banana")
+        {
+            uiHolder.sprite = banana;
+        }
+        else if(chosenItem == "Bread")
+        {
+            uiHolder.sprite = bread;
+        }
+        else if(chosenItem == "Ham")
+        {
+            uiHolder.sprite = ham;
+        }
+        else if(chosenItem == "Onion")
+        {
+            uiHolder.sprite = onion;
+        }
+        else if(chosenItem == "Soup")
+        {
+            uiHolder.sprite = soup;
+        }
+        else
+        {
+            uiHolder.sprite = tomato;
+        }
+
+
     }
 }
