@@ -6,6 +6,6 @@ public class TillPayment : MonoBehaviour
 {
     private void OnTriggerStay(Collider other)
     {
-        /
+        
     }
 }
