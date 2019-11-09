@@ -15,6 +15,7 @@ TagManager:
   - Soup
   - Entrance
   - PaperBag
+  - Waypoints
   layers:
   - Default
   - TransparentFX

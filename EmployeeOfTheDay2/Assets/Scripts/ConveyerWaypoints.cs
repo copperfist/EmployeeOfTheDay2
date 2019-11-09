@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class ConveyerWaypoints : MonoBehaviour
 {
-    public Transform[] target;
+    public GameObject[] target;
     public float speed;
 
-    private int current;
-    //public GameObject trigger; 
+    private int current = 0;
 
+    void Start()
+    {
+        target = GameObject.FindGameObjectsWithTag("Waypoints");
+       // transform.position = target[current].transform.position; 
+    }
 
 
     void OnCollisionStay(Collision collision)
@@ -21,19 +25,20 @@ public class ConveyerWaypoints : MonoBehaviour
         {
 
             //Debug.Log("collision with conveyor belt");
-            if (transform.position != target[current].position)
+            if (transform.position != target[current].transform.position)
             {
-                Vector3 pos = Vector3.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);
+                Vector3 pos = Vector3.MoveTowards(transform.position, target[current].transform.position, speed * Time.deltaTime);
+
                 GetComponent<Rigidbody>().MovePosition(pos);
 
-                float dist = Vector3.Distance(target[current].position, transform.position);
+                float dist = Vector3.Distance(target[current].transform.position, transform.position);
 
                 //Debug.Log(transform.position.x.ToString());
-                if (dist < 0.1) 
+                if (dist < 0.3) 
                 {
                     current++;
-                    Debug.Log("next");
-                    Debug.Log(current);
+                   // Debug.Log("next");
+                   // Debug.Log(current);
                 }
 
                 if(current == 3)

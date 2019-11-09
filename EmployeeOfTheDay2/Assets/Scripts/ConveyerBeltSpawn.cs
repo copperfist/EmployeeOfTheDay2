@@ -23,7 +23,7 @@ public class ConveyerBeltSpawn : MonoBehaviour
             whatToSpawn = Random.Range(1, 6);
 
             //which one is it
-            Debug.Log(whatToSpawn);
+            //Debug.Log(whatToSpawn);
 
             //instantiate a prefab 
             switch (whatToSpawn)
