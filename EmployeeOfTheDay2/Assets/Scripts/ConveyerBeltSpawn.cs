@@ -20,7 +20,7 @@ public class ConveyerBeltSpawn : MonoBehaviour
     {
         if(Time.time > nextSpawn)
         {
-            whatToSpawn = Random.Range(1, 6);
+            whatToSpawn = Random.Range(1, 7);
 
             //which one is it
             //Debug.Log(whatToSpawn);
@@ -45,6 +45,9 @@ public class ConveyerBeltSpawn : MonoBehaviour
                     break;
                 case 6:
                     Instantiate(tomato, transform.position, Quaternion.identity);
+                    Debug.Log("tomato spawn");
+                    break;
+                case 7:
                     break;
             }
 

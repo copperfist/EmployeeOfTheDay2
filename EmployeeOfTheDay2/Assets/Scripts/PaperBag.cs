@@ -57,7 +57,7 @@ public class PaperBag : MonoBehaviour
 
         Item_UI();
 
-        Debug.Log(chosenItem); //The chosen tag. This needs to be displayed in UI
+        //Debug.Log(chosenItem); //The chosen tag. This needs to be displayed in UI
     }
 
     private void MyList()
@@ -90,11 +90,11 @@ public class PaperBag : MonoBehaviour
     }
     public void CheckPaperBag()
     {
-        Debug.Log("Checking Paper Bag");
+        //Debug.Log("Checking Paper Bag");
 
         BagIsFull = true;
 
-        Debug.Log(BagIsFull);
+        //Debug.Log(BagIsFull);
     }
 
     public void Item_UI()//Check which item is picked and display correct ui
@@ -136,7 +136,7 @@ public class PaperBag : MonoBehaviour
         }
         else if(chosenItem == "Ham")
         {
-            Debug.Log("Ham UI");
+            //Debug.Log("Ham UI");
 
             bananaIMG.enabled = false;
             breadIMG.enabled = false;
@@ -150,7 +150,7 @@ public class PaperBag : MonoBehaviour
         }
         else if(chosenItem == "Onion")
         {
-            Debug.Log("Onion UI");
+            //Debug.Log("Onion UI");
 
             bananaIMG.enabled = false;
             breadIMG.enabled = false;
@@ -163,7 +163,7 @@ public class PaperBag : MonoBehaviour
         }
         else if(chosenItem == "Soup")
         {
-            Debug.Log("Soup UI");
+            //Debug.Log("Soup UI");
 
             bananaIMG.enabled = false;
             breadIMG.enabled = false;
@@ -176,7 +176,7 @@ public class PaperBag : MonoBehaviour
         }
         else //Tomato
         {
-            Debug.Log("Tomato UI");
+            //Debug.Log("Tomato UI");
 
 
             bananaIMG.enabled = false;
