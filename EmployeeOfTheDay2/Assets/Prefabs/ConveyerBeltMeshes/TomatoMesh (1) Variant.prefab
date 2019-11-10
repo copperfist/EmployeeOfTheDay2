@@ -15,7 +15,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!135 &328962259
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -74,7 +74,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_Name
-      value: TomatoMesh (1) Variant
+      value: TomatoMesh (1)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}

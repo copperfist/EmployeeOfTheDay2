@@ -9,7 +9,7 @@ public class SpawnPaperBag : MonoBehaviour
 
     private bool makeNewBag = false;
 
-
+    public static int points = 0;
 
     void Start()
     {
@@ -21,7 +21,8 @@ public class SpawnPaperBag : MonoBehaviour
     {
         makeNewBag = PaperBag.BagIsFull;
         if (makeNewBag == true)
-        {            
+        {
+            ScoreManager.score += 10;
 
             StartCoroutine(SpawnNewBag());
 

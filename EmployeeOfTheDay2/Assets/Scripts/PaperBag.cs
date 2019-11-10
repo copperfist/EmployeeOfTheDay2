@@ -21,8 +21,6 @@ public class PaperBag : MonoBehaviour
 
     public static bool BagIsFull = false;
     
-    public int points = 0;
-
     //List of UI items
     public GameObject banana;
     public GameObject bread;
@@ -77,7 +75,6 @@ public class PaperBag : MonoBehaviour
             if (itemsInBag >= shoppingList)//Shopping list full
             {
                 itemsInBag = 0;
-                points += 10;
 
                 Debug.Log("Shopping Bag Full");
 

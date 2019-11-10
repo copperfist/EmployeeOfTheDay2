@@ -6,7 +6,7 @@ using System;
 
 public class TimerGameOver : MonoBehaviour
 {
-    int countDownStartValue = 240;
+    public int countDownStartValue = 240;
     public Text timerUI;
     void Start()
     {
