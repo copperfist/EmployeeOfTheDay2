@@ -46,6 +46,7 @@ public class PaperBag : MonoBehaviour
     void Update()
     {
         Item_UI();
+        Canvas.ForceUpdateCanvases();
     }
 
     private void FindProducts() //Picks a random tag for item
@@ -103,26 +104,32 @@ public class PaperBag : MonoBehaviour
         if(chosenItem == "Banana")
         {
             uiHolder.sprite = banana;
+            Canvas.ForceUpdateCanvases();
         }
         else if(chosenItem == "Bread")
         {
             uiHolder.sprite = bread;
+            Canvas.ForceUpdateCanvases();
         }
         else if(chosenItem == "Ham")
         {
             uiHolder.sprite = ham;
+            Canvas.ForceUpdateCanvases();
         }
         else if(chosenItem == "Onion")
         {
             uiHolder.sprite = onion;
+            Canvas.ForceUpdateCanvases();
         }
         else if(chosenItem == "Soup")
         {
-            uiHolder.sprite = soup;
+            uiHolder.sprite = soup; 
+            Canvas.ForceUpdateCanvases();
         }
         else
         {
             uiHolder.sprite = tomato;
+            Canvas.ForceUpdateCanvases();
         }
 
 
