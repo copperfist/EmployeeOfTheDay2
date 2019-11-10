@@ -42,12 +42,17 @@ public class PaperBag : MonoBehaviour
         MyList();
         FindProducts();
     }
-    
+
+    void Update()
+    {
+        Item_UI();
+    }
+
     private void FindProducts() //Picks a random tag for item
     {
         randomIndex = Random.Range(0, products.Length);
         chosenItem = products[randomIndex];
-        Item_UI();
+        
 
         Debug.Log(chosenItem); //The chosen tag. This needs to be displayed in UI
     }
@@ -77,6 +82,7 @@ public class PaperBag : MonoBehaviour
             {
                 BagIsFull = false;
                 FindProducts();
+                Item_UI();
             }
 
 

@@ -37,8 +37,8 @@ public class ConveyerWaypoints : MonoBehaviour
                 if (dist < 0.2) 
                 {
                     current++;
-                    Debug.Log("next");
-                    Debug.Log(current);
+                   // Debug.Log("next");
+                   // Debug.Log(current);
                 }
 
                 if(current == 3)
