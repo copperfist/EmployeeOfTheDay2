@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement_P2 : MonoBehaviour
 {
 
     public float movementSpeed = 5.0f;
@@ -14,9 +14,9 @@ public class Movement : MonoBehaviour
     public float throwForce = 10.0f;
     public Animator playerAnimator;
 
-    public string horizontalCtrl = "Horizontal_P1";
-    public string verticalCtrl = "Vertical_P1";
-    public string interactCtrl = "Interact_P1";
+    public string horizontalCtrl = "Horizontal_P2";
+    public string verticalCtrl = "Vertical_P2";
+    public string interactCtrl = "Interact_P2";
 
     private Rigidbody rb;
     private Rigidbody playerRb;

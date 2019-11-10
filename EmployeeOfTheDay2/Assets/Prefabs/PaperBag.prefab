@@ -225,14 +225,12 @@ MonoBehaviour:
   - Soup
   chosenItem: 
   points: 0
-  banana: {fileID: 21300000, guid: 7bff6b522ebd283478ed63b0ae0a21eb, type: 3}
-  bread: {fileID: 21300000, guid: d516cdc43b2227b449dcb5c3091bb03a, type: 3}
-  ham: {fileID: 21300000, guid: 9f9fc4209ac76f646af89e964784764d, type: 3}
-  onion: {fileID: 21300000, guid: 9e043a6cfccdd194195a655f1172c96e, type: 3}
-  soup: {fileID: 21300000, guid: b6b9f392abe1d1644a2712c61dcf3a43, type: 3}
-  tomato: {fileID: 21300000, guid: f09ace31e694aa34b9f05e565919438f, type: 3}
-  uiHolder: {fileID: 4873295300700129133, guid: 629a867a0796800448ce6bd985c792a3,
-    type: 3}
+  banana: {fileID: 2857416359210296049, guid: 76791bbfb43d5be449bc80914e5b7791, type: 3}
+  bread: {fileID: 6064885179670263589, guid: a5e3aaca3b9d2eb4398631f5d94159f2, type: 3}
+  ham: {fileID: 9157585583161672546, guid: 2f28dc40f3a26da4a999f520ee1ca801, type: 3}
+  onion: {fileID: 1685936834897414600, guid: 9fdfbe514e8cc5b45b1cf7fef0018cb5, type: 3}
+  soup: {fileID: 5423785506898861212, guid: 7c4377bd61aa4d949afb326e2ac67f1a, type: 3}
+  tomato: {fileID: 5606415716884142405, guid: cff174b9c92834a42a25a4a2f771ecfc, type: 3}
 --- !u!114 &499146712766390673
 MonoBehaviour:
   m_ObjectHideFlags: 0

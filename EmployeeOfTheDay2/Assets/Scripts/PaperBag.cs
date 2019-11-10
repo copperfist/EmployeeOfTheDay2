@@ -24,36 +24,40 @@ public class PaperBag : MonoBehaviour
     public int points = 0;
 
     //List of UI items
-    public Sprite banana;
-    public Sprite bread;
-    public Sprite ham;
-    public Sprite onion;
-    public Sprite soup;
-    public Sprite tomato;
+    public GameObject banana;
+    public GameObject bread;
+    public GameObject ham;
+    public GameObject onion;
+    public GameObject soup;
+    public GameObject tomato;
 
-    public Image uiHolder; //This will be changing
+    public bool uiUpdate = false;
 
     private void Start()
-    {        
+    {
+        banana = GameObject.Find("Banana_UI");
+        bread = GameObject.Find("Bread_UI");
+        ham = GameObject.Find("Ham_UI");
+        onion = GameObject.Find("Onion_UI");
+        soup = GameObject.Find("Soup_UI");
+        tomato = GameObject.Find("Tomato_UI");
+
         entrance = GameObject.FindGameObjectWithTag("Entrance");
 
         Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
 
         MyList();
         FindProducts();
+
     }
 
-    void Update()
-    {
-        Item_UI();
-        Canvas.ForceUpdateCanvases();
-    }
 
     private void FindProducts() //Picks a random tag for item
     {
         randomIndex = Random.Range(0, products.Length);
         chosenItem = products[randomIndex];
-        
+
+        Item_UI();
 
         Debug.Log(chosenItem); //The chosen tag. This needs to be displayed in UI
     }
@@ -85,10 +89,7 @@ public class PaperBag : MonoBehaviour
                 FindProducts();
                 Item_UI();
             }
-
-
         }
-
     }
     public void CheckPaperBag()
     {
@@ -101,37 +102,94 @@ public class PaperBag : MonoBehaviour
 
     public void Item_UI()//Check which item is picked and display correct ui
     {
-        if(chosenItem == "Banana")
+        Image bananaIMG = banana.GetComponent<Image>();
+        Image breadIMG = bread.GetComponent<Image>();
+        Image hamIMG = ham.GetComponent<Image>();
+        Image onionIMG = onion.GetComponent<Image>();
+        Image soupIMG = soup.GetComponent<Image>();
+        Image tomatoIMG = tomato.GetComponent<Image>();
+
+        if (chosenItem == "Banana")
         {
-            uiHolder.sprite = banana;
-            Canvas.ForceUpdateCanvases();
+            Debug.Log("Banana UI");
+
+            bananaIMG.enabled = true;
+            breadIMG.enabled = false;
+            hamIMG.enabled = false;
+            onionIMG.enabled = false;
+            soupIMG.enabled = false;
+            tomatoIMG.enabled = false;
+
+            uiUpdate = false;
+
         }
         else if(chosenItem == "Bread")
         {
-            uiHolder.sprite = bread;
-            Canvas.ForceUpdateCanvases();
+            Debug.Log("Bread UI");
+
+            bananaIMG.enabled = false;
+            breadIMG.enabled = true;
+            hamIMG.enabled = false;
+            onionIMG.enabled = false;
+            soupIMG.enabled = false;
+            tomatoIMG.enabled = false;
+
+            uiUpdate = false;
+
         }
         else if(chosenItem == "Ham")
         {
-            uiHolder.sprite = ham;
-            Canvas.ForceUpdateCanvases();
+            Debug.Log("Ham UI");
+
+            bananaIMG.enabled = false;
+            breadIMG.enabled = false;
+            hamIMG.enabled = true;
+            onionIMG.enabled = false;
+            soupIMG.enabled = false;
+            tomatoIMG.enabled = false;
+            uiUpdate = false;
+
+
         }
         else if(chosenItem == "Onion")
         {
-            uiHolder.sprite = onion;
-            Canvas.ForceUpdateCanvases();
+            Debug.Log("Onion UI");
+
+            bananaIMG.enabled = false;
+            breadIMG.enabled = false;
+            hamIMG.enabled = false;
+            onionIMG.enabled = true;
+            soupIMG.enabled = false;
+            tomatoIMG.enabled = false;
+            uiUpdate = false;
+
         }
         else if(chosenItem == "Soup")
         {
-            uiHolder.sprite = soup; 
-            Canvas.ForceUpdateCanvases();
+            Debug.Log("Soup UI");
+
+            bananaIMG.enabled = false;
+            breadIMG.enabled = false;
+            hamIMG.enabled = false;
+            onionIMG.enabled = false;
+            soupIMG.enabled = true;
+            tomatoIMG.enabled = false;
+            uiUpdate = false;
+
         }
-        else
+        else //Tomato
         {
-            uiHolder.sprite = tomato;
-            Canvas.ForceUpdateCanvases();
+            Debug.Log("Tomato UI");
+
+
+            bananaIMG.enabled = false;
+            breadIMG.enabled = false;
+            hamIMG.enabled = false;
+            onionIMG.enabled = false;
+            soupIMG.enabled = false;
+            tomatoIMG.enabled = true;
+            uiUpdate = false;
+
         }
-
-
     }
 }
