@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
         playerRb = gameObject.GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         PlayerMovement();
         PlayerAnimation();
@@ -101,7 +101,7 @@ public class Movement : MonoBehaviour
                     item = null;
                 }
             }
-            /*else if (Input.GetKey("joystick button 1"))
+                else if (Input.GetKey("joystick button 1"))
             {
                 rb.AddForce(throwForce, 0f, 0f);
 
@@ -111,7 +111,7 @@ public class Movement : MonoBehaviour
                 item.transform.parent = null;
                 item.transform.position = guide.transform.position;
                 item = null;
-            }*/
+            }
         }
     }
 }
