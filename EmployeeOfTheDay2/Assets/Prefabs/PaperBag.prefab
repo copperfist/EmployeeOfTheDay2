@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 1212399654663116181}
   - component: {fileID: 499146712766390674}
   - component: {fileID: 499146712766390672}
-  - component: {fileID: 499146712766390673}
   m_Layer: 0
   m_Name: PaperBag
   m_TagString: PaperBag
@@ -224,28 +223,10 @@ MonoBehaviour:
   - Tomato
   - Soup
   chosenItem: 
-  points: 0
   banana: {fileID: 2857416359210296049, guid: 76791bbfb43d5be449bc80914e5b7791, type: 3}
   bread: {fileID: 6064885179670263589, guid: a5e3aaca3b9d2eb4398631f5d94159f2, type: 3}
   ham: {fileID: 9157585583161672546, guid: 2f28dc40f3a26da4a999f520ee1ca801, type: 3}
   onion: {fileID: 1685936834897414600, guid: 9fdfbe514e8cc5b45b1cf7fef0018cb5, type: 3}
   soup: {fileID: 5423785506898861212, guid: 7c4377bd61aa4d949afb326e2ac67f1a, type: 3}
   tomato: {fileID: 5606415716884142405, guid: cff174b9c92834a42a25a4a2f771ecfc, type: 3}
---- !u!114 &499146712766390673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3657630433672124085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
+  uiUpdate: 0

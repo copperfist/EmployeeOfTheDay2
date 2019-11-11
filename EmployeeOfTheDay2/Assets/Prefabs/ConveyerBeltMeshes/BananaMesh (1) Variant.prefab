@@ -29,24 +29,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.46334428
   m_Center: {x: -0.06, y: 0.06475866, z: 0.05}
---- !u!114 &1683995591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078733244778925971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &5845699285137472623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,7 +56,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
       propertyPath: m_Name
-      value: BananaMesh (1)
+      value: BananaMesh (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
