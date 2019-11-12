@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8632627387863571582}
   - component: {fileID: 8632627387863571583}
   m_Layer: 8
-  m_Name: Player
+  m_Name: Player1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,29 +192,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigMikeRun
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
-    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed by
-        Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
-        'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform
-        'Character1_Ctrl_RightArm'\n\tTransform 'Character1_Ctrl_LeftLeg'\n\tTransform
-        'Character1_Ctrl_LeftFoot'\n\tTransform 'Character1_Ctrl_RightHand'\n\tTransform
-        'Character1_Ctrl_RightUpLeg'\n\tTransform 'Character1_Ctrl_RightForeArm'\n\tand
-        more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom animation clip 'Anim_Run'\n\tFrom
-        animation clip 'Anim_IdleHold'\n\tFrom animation clip 'Anim_RunHold'"
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,6 +246,29 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed by
+        Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
+        'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform
+        'Character1_Ctrl_RightArm'\n\tTransform 'Character1_Ctrl_LeftLeg'\n\tTransform
+        'Character1_Ctrl_LeftFoot'\n\tTransform 'Character1_Ctrl_RightHand'\n\tTransform
+        'Character1_Ctrl_RightUpLeg'\n\tTransform 'Character1_Ctrl_RightForeArm'\n\tand
+        more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom animation clip 'Anim_Run'\n\tFrom
+        animation clip 'Anim_IdleHold'\n\tFrom animation clip 'Anim_RunHold'"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2743e6677f997a4ea5e4726e68b6de9, type: 3}
