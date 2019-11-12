@@ -27,7 +27,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.47
+  m_Radius: 0.45
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-2961341398957986537
 MonoBehaviour:
@@ -46,6 +46,7 @@ MonoBehaviour:
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
   - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
+  waypointDistance: 0.2
 --- !u!1001 &569490403321362510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,7 +57,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_Name
-      value: TomatoMesh (1) Variant
+      value: TomatoMesh (1)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
@@ -66,17 +67,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.4491043
+      value: 0.251
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6461515
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.7533283
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}

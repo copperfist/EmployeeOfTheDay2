@@ -18,12 +18,9 @@ public class ConveyerBeltSpawn : MonoBehaviour
 
     public void Update()
     {
-        if(Time.time > nextSpawn)
+        if (Time.time > nextSpawn)
         {
             whatToSpawn = Random.Range(1, 7);
-
-            //which one is it
-            //Debug.Log(whatToSpawn);
 
             //instantiate a prefab 
             switch (whatToSpawn)
@@ -51,7 +48,7 @@ public class ConveyerBeltSpawn : MonoBehaviour
                     break;
             }
 
-            nextSpawn = Time.time + spawnRate; 
+            nextSpawn = Time.time + spawnRate;
         }
     }
 

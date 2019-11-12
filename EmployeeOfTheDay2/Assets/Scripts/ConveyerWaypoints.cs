@@ -8,17 +8,16 @@ public class ConveyerWaypoints : MonoBehaviour
     public float speed;
 
     private int current = 0;
+    public float waypointDistance = 0.2f;
 
     void Start()
     {
         target = GameObject.FindGameObjectsWithTag("Waypoints");
-       // transform.position = target[current].transform.position; 
     }
 
 
     void OnCollisionStay(Collision collision)
     {
-
 
         //Check if object meets conveyor belt
         if (collision.gameObject.name == "ConveyorMesh")
@@ -33,32 +32,19 @@ public class ConveyerWaypoints : MonoBehaviour
 
                 float dist = Vector3.Distance(target[current].transform.position, transform.position);
 
-                //Debug.Log(transform.position.x.ToString());
-                if (dist < 0.3) 
+                if (dist < waypointDistance)
                 {
                     current++;
-                   // Debug.Log("next");
-                   // Debug.Log(current);
+
                 }
 
-                if(current == 3)
+                if (current == 3)
                 {
                     Destroy(gameObject);
                 }
 
             }
         }
-
-        //if (dist <)
-        //{
-        //    Debug.Log("die");
-        //    Destroy(gameObject);
-        //}
-        
-
-
-    
-
     }
 
 }

@@ -16,8 +16,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!135 &1683995592
-SphereCollider:
+--- !u!65 &6055749132752674762
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -27,8 +27,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.46334428
-  m_Center: {x: -0.06, y: 0.06475866, z: 0.05}
+  m_Size: {x: 0.92668855, y: 0.328714, z: 0.6008379}
+  m_Center: {x: 0.027302532, y: -0.16204077, z: -0.069360495}
 --- !u!114 &5845699285137472623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,6 +46,20 @@ MonoBehaviour:
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
   - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
+  waypointDistance: 0.2
+--- !u!65 &1432232714440958124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078733244778925971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32992265, y: 0.45037568, z: 0.6008379}
+  m_Center: {x: -0.27108, y: 0.23072726, z: -0.06936031}
 --- !u!1001 &9068423626335491738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,7 +70,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
       propertyPath: m_Name
-      value: BananaMesh (1) Variant
+      value: BananaMesh (1)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
@@ -71,7 +85,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.443
+      value: -0.537
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
