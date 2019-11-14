@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
     private Rigidbody rb;
     private Rigidbody playerRb;
 
-    private bool isAPressed = false;
+    public bool isAPressed = false;
 
     //github update  test
 
