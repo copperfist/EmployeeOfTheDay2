@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public GameObject item;
     public float throwForce = 10.0f;
     public Animator playerAnimator;
+    public GameObject runDust;
 
     public string horizontalCtrl = "Horizontal_P1";
     public string verticalCtrl = "Vertical_P1";
@@ -25,9 +26,10 @@ public class Movement : MonoBehaviour
 
     //github update  test
 
-    void Awake()
+    void Start()
     {
         playerRb = gameObject.GetComponent<Rigidbody>();
+        gameObject.GetComponentsInChildren<ParticleSystem>();
     }
 
     private void FixedUpdate()
@@ -39,14 +41,22 @@ public class Movement : MonoBehaviour
 
     void PlayerAnimation()
     {
+        ParticleSystem dust = runDust.GetComponent<ParticleSystem>();
+
+
         if (Input.GetAxis(verticalCtrl) == 0 && Input.GetAxis(horizontalCtrl) == 0)
         {
             playerAnimator.SetBool("Moving", false);
+            dust.Play();
+
+
         }
 
         else
         {
             playerAnimator.SetBool("Moving", true);
+            //dust.Play();
+
         }
 
         if (isAPressed == true)
@@ -57,7 +67,7 @@ public class Movement : MonoBehaviour
         else
         {
             playerAnimator.SetBool("Holding", false);
-        }
+        } 
     }
 
     public void PlayerMovement()

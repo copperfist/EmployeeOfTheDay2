@@ -16,6 +16,7 @@ TagManager:
   - Entrance
   - PaperBag
   - Waypoints
+  - ParticleSystem
   layers:
   - Default
   - TransparentFX
