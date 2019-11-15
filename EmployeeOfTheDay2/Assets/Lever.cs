@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-//    //public class conveyorBelt;
+    public string interactCtrl = "Interact_P1";
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("trigger enter");
 
-//    public static float speed1;
-
-
-//    private void OnTriggerStay(Collider other)
-//    {
-//        if (other.GetComponent<Movement>().isAPressed == false)
-//        {
-//            other.GetComponent<Movement>().isAPressed = true; 
-//            Debug.Log("lever interact");
-//            GetComponent<ConveyerWaypoints>().speed = speed1;
-//            speed1 = GetComponent<ConveyerWaypoints>().speed * 5;
-
-//        }
-
-//    }
+        if (Input.GetButtonDown(interactCtrl))
+        {
+            print("joystick pressed");
+        }
+    }
 
 }
