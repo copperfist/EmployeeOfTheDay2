@@ -4895,6 +4895,7 @@ MonoBehaviour:
   horizontalCtrl: Horizontal
   verticalCtrl: Vertical
   interactCtrl: Interact
+  isAPressed: 0
 --- !u!54 &8632627387863571582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4974,7 +4975,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.024
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}

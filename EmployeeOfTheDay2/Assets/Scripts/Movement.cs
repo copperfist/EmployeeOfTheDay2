@@ -43,7 +43,6 @@ public class Movement : MonoBehaviour
     {
         ParticleSystem dust = runDust.GetComponent<ParticleSystem>();
 
-
         if (Input.GetAxis(verticalCtrl) == 0 && Input.GetAxis(horizontalCtrl) == 0)
         {
             playerAnimator.SetBool("Moving", false);
@@ -89,10 +88,14 @@ public class Movement : MonoBehaviour
 
         if (item.tag == "Banana" || item.tag == "Bread" || item.tag == "Ham" || item.tag == "Onion" || item.tag == "Tomato" || item.tag == "Soup")
         {
+
+
             if (Input.GetButton(interactCtrl)) //Picking up and dropping objects
             {
+            
                 if (isAPressed == false)
-                {
+                {              
+
                     isAPressed = true;
                     item.GetComponent<Rigidbody>().useGravity = false;
                     item.GetComponent<Rigidbody>().isKinematic = true;
