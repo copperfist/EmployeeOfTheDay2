@@ -23,7 +23,7 @@ Animator:
     'Character1_Ctrl_RightHand'\n\tTransform 'Character1_Ctrl_RightUpLeg'\n\tTransform
     'Character1_Ctrl_RightForeArm'\n\tand more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom
     animation clip 'Anim_Run'\n\tFrom animation clip 'Anim_IdleHold'\n\tFrom animation
-    clip 'Anim_RunHold'"
+    clip 'Anim_RunHold'\n\tFrom animation clip 'Anim_Lever'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -4892,16 +4892,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  interactObject: {fileID: 0}
-  tempParent: {fileID: 8632627388242355433}
   guide: {fileID: 8632627388242355434}
   item: {fileID: 0}
   throwForce: 200
+  isAPressed: 0
+  canHold: 1
   playerAnimator: {fileID: 572127697}
   runDust: {fileID: 7184180488961982977}
-  horizontalCtrl: Horizontal_P1
-  verticalCtrl: Vertical_P1
-  interactCtrl: Interact_P1
+  horizontalCtrl: Horizontal_P2
+  verticalCtrl: Vertical_P2
+  interactCtrl: Interact_P2
 --- !u!54 &8632627387863571582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4910,7 +4910,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8632627387863571552}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 600
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
