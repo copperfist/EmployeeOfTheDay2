@@ -100,12 +100,12 @@ public class Movement : MonoBehaviour
                 return;
             }
 
-            /* if (Input.GetButton(interactCtrl)) //Picking up and dropping objects
+             if (Input.GetButton(interactCtrl)) //Picking up and dropping objects
              {
 
                  if (isAPressed == false)
-                 {              
-
+                 {
+                    Debug.Log("pickup");
                      isAPressed = true;
                      item.GetComponent<Rigidbody>().useGravity = false;
                      item.GetComponent<Rigidbody>().isKinematic = true;
@@ -126,7 +126,7 @@ public class Movement : MonoBehaviour
              }
             else if (Input.GetKey("joystick button 1"))
              {
-                 rb.AddForce(throwForce, 0f, 0f);
+                 //Rigidbody.AddForce(throwForce, 0f, 0f);
 
                  isAPressed = false;
                  item.GetComponent<Rigidbody>().useGravity = true;
@@ -134,7 +134,7 @@ public class Movement : MonoBehaviour
                  item.transform.parent = null;
                  item.transform.position = guide.transform.position;
                  item = null;
-             }*/
+             }
         }
     }
 
