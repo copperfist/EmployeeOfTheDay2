@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-    //public string interactCtrl = "Interact_P1";
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    Debug.Log("trigger enter");
+    public string interactCtrl = "Interact_P1";
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("trigger enter");
 
-    //    if (Input.GetButtonDown(interactCtrl))
-    //    {
-    //        print("joystick pressed");
-    //    }
-    //}
+        if (Input.GetButtonDown(interactCtrl))
+        {
+            print("joystick pressed");
+        }
+    }
 
 }
