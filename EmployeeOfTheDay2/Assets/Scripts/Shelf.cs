@@ -10,7 +10,7 @@ public class Shelf : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Cube"))
+        if (other.tag == "Banana" || other.tag == "Bread" || other.tag == "Ham" || other.tag == "Onion" || other.tag == "Tomato" || other.tag == "Soup")
         {
             other.attachedRigidbody.useGravity = false;
             other.attachedRigidbody.isKinematic = true;
@@ -23,7 +23,7 @@ public class Shelf : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Cube"))
+        if (other.tag == "Banana" || other.tag == "Bread" || other.tag == "Ham" || other.tag == "Onion" || other.tag == "Tomato" || other.tag == "Soup")
         {
             if (other.attachedRigidbody.useGravity == false)
             {

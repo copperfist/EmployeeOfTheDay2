@@ -11,7 +11,7 @@ public class ObjectInteraction : MonoBehaviour
     public string interactCtrl = "Interact_P1";
     public bool isAPressed = false;
 
-    private bool canHold = false;
+    public bool canHold = false;
 
 
     void Start()
