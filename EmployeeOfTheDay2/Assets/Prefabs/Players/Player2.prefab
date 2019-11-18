@@ -4795,6 +4795,7 @@ GameObject:
   - component: {fileID: 8632627387863571553}
   - component: {fileID: 8632627387863571582}
   - component: {fileID: 8632627387863571583}
+  - component: {fileID: 1634632316}
   m_Layer: 8
   m_Name: Player2
   m_TagString: Player
@@ -4892,16 +4893,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  guide: {fileID: 8632627388242355434}
-  item: {fileID: 0}
-  throwForce: 200
-  isAPressed: 0
-  canHold: 1
   playerAnimator: {fileID: 572127697}
   runDust: {fileID: 7184180488961982977}
   horizontalCtrl: Horizontal_P2
   verticalCtrl: Vertical_P2
-  interactCtrl: Interact_P2
+  isAPressed: 0
 --- !u!54 &8632627387863571582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4931,6 +4927,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.73, z: 0.61}
   m_Center: {x: 0, y: -0.26, z: 0.88}
+--- !u!114 &1634632316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632627387863571552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22ae7fdcd488414e917751dc7a1cf7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guide: {fileID: 0}
+  item: {fileID: 0}
+  throwForce: 10
+  playerAnimator: {fileID: 572127697}
+  interactCtrl: Interact_P2
+  isAPressed: 0
 --- !u!1 &8632627388242355433
 GameObject:
   m_ObjectHideFlags: 0

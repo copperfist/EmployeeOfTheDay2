@@ -19,15 +19,50 @@ public class ObjectInteraction : MonoBehaviour
         gameObject.GetComponentsInChildren<ParticleSystem>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         PlayerAnimation();
+
+        if (Input.GetButtonDown(interactCtrl) && canHold == true)
+        {
+            item.GetComponent<Rigidbody>().useGravity = false;
+            item.GetComponent<Rigidbody>().isKinematic = true;
+
+            item.transform.position = guide.transform.position;
+            item.transform.rotation = guide.transform.rotation;
+            item.transform.parent = transform;
+        }
+
+        if (Input.GetButtonUp(interactCtrl) && canHold == true)
+        {
+            item.GetComponent<Rigidbody>().useGravity = true;
+            item.GetComponent<Rigidbody>().isKinematic = false;
+            item.transform.parent = null;
+            item.transform.position = guide.transform.position;
+            item = null;
+        }
+
+        if (item == null)
+        {
+            canHold = false;
+        }
+
+        /*if (Input.GetKey("joystick button 1"))
+        {
+            rb.AddForce(throwForce, 0f, 0f);
+            isAPressed = false;
+            item.GetComponent<Rigidbody>().useGravity = true;
+            item.GetComponent<Rigidbody>().isKinematic = false;
+            item.transform.parent = null;
+            item.transform.position = guide.transform.position;
+            item = null;
+        }*/
 
     }
 
     void PlayerAnimation()//Pick u anim
     {
-        if (isAPressed == true)
+        if (canHold == true)
         {
             playerAnimator.SetBool("Holding", true);
         }
@@ -38,57 +73,20 @@ public class ObjectInteraction : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (canHold == true)
-        {
-            if (Input.GetButton(interactCtrl)) //Picking up and dropping objects
-            {
-
-                if (isAPressed == false)
-                {
-
-                    isAPressed = true;
-                    item.GetComponent<Rigidbody>().useGravity = false;
-                    item.GetComponent<Rigidbody>().isKinematic = true;
-
-                    item.transform.position = guide.transform.position;
-                    item.transform.rotation = guide.transform.rotation;
-                    item.transform.parent = transform;
-                }
-                else
-                {
-                    isAPressed = false;
-                    item.GetComponent<Rigidbody>().useGravity = true;
-                    item.GetComponent<Rigidbody>().isKinematic = false;
-                    item.transform.parent = null;
-                    item.transform.position = guide.transform.position;
-                    item = null;
-                    canHold = false;
-                }
-            }
-            /*else if (Input.GetKey("joystick button 1"))
-            {
-                rb.AddForce(throwForce, 0f, 0f);
-                isAPressed = false;
-                item.GetComponent<Rigidbody>().useGravity = true;
-                item.GetComponent<Rigidbody>().isKinematic = false;
-                item.transform.parent = null;
-                item.transform.position = guide.transform.position;
-                item = null;
-            }*/
-        }
-
-
-    }
-
     private void OnTriggerStay(Collider other)
     {
-
-        item = other.gameObject;
-        if (item.tag == "Banana" || item.tag == "Bread" || item.tag == "Ham" || item.tag == "Onion" || item.tag == "Tomato" || item.tag == "Soup")
+        if (other.tag == "Banana" || other.tag == "Bread" || other.tag == "Ham" || other.tag == "Onion" || other.tag == "Tomato" || other.tag == "Soup")
         {
+            item = other.gameObject;
             canHold = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Banana" || other.tag == "Bread" || other.tag == "Ham" || other.tag == "Onion" || other.tag == "Tomato" || other.tag == "Soup")
+        {
+            canHold = false;
         }
     }
 }
