@@ -4944,7 +4944,9 @@ MonoBehaviour:
   throwForce: 10
   playerAnimator: {fileID: 572127697}
   interactCtrl: Interact_P2
-  HoldingA: 0
+  leverReady: 0
+  leverAction: 0
+  canHold: 0
 --- !u!1 &8632627388242355433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,7 +4998,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ca254a3705c3bb045bf0b17c7887053c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0460001
+      value: -1.016
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ca254a3705c3bb045bf0b17c7887053c,
         type: 3}

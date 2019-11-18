@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 8632627387863571554}
   - component: {fileID: 8632627387863571582}
   - component: {fileID: 8632627387863571583}
+  - component: {fileID: 1147606617}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Player
@@ -152,6 +153,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8, z: 2.29}
   m_Center: {x: 0, y: 0, z: 0.7}
+--- !u!95 &1147606617
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632627387863571552}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5094152d05431a429bc38f6191e32e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8632627388242355433
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,11 +214,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Albert_Rigl
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: a8dc7663fffbb9045ac09c14cb328d86,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a2a35e3606b413a489310402b25cae98, type: 2}
     - target: {fileID: -4216859302048453862, guid: a8dc7663fffbb9045ac09c14cb328d86,
         type: 3}
       propertyPath: m_LocalPosition.x
