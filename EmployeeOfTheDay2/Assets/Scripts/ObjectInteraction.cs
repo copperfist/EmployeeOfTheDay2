@@ -9,15 +9,10 @@ public class ObjectInteraction : MonoBehaviour
     public float throwForce = 10.0f;
     public Animator playerAnimator;
     public string interactCtrl = "Interact_P1";
-    public bool isAPressed = false;
+    public bool leverReady = false;
+    public bool leverAction = false;
 
     public bool canHold = false;
-
-
-    void Start()
-    {
-        gameObject.GetComponentsInChildren<ParticleSystem>();
-    }
 
     private void Update()
     {
@@ -33,7 +28,7 @@ public class ObjectInteraction : MonoBehaviour
             item.transform.parent = transform;
         }
 
-        if (Input.GetButtonUp(interactCtrl) && canHold == true)
+        else if (Input.GetButtonUp(interactCtrl) && canHold == true)
         {
             item.GetComponent<Rigidbody>().useGravity = true;
             item.GetComponent<Rigidbody>().isKinematic = false;
@@ -42,7 +37,19 @@ public class ObjectInteraction : MonoBehaviour
             item = null;
         }
 
-        if (item == null)
+        else if (Input.GetButtonDown(interactCtrl) && leverReady == true)
+        {
+            playerAnimator.SetBool("Lever", true);
+            leverAction = true;
+        }
+
+        else if (leverReady == false || Input.GetButtonUp(interactCtrl))
+        {
+            playerAnimator.SetBool("Lever", false);
+            leverAction = false;
+        }
+
+        if (item == null) //reset when item is destroyed
         {
             canHold = false;
         }
