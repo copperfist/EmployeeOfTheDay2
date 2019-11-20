@@ -6,21 +6,36 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    bool gameHasEnded = false;
-    public GameObject GameEndUI;
+    public bool gameHasEnded;
+    public GameObject TimesUpUI;
+    public GameObject GameOverUI;
+    public TimerGameOver GameObject;
 
-    
-
-    public void EndGame ()
+    void Start()
     {
-        if (gameHasEnded == false)
-        {
-            Debug.Log("Game Over");
-            GameEndUI.SetActive(true);
-            Time.timeScale = 0f;
-            gameHasEnded = true;
-        }
-        
+       
+    }
+
+    private void Update()
+    {
+    }
+
+
+    public IEnumerator EndGame ()
+    {
+       
+            Debug.Log("Time's Up!");
+            TimesUpUI.SetActive(true);
+            yield return new WaitForSecondsRealtime(5);
+            Debug.Log("done waiting");
+            TimesUpUI.SetActive(false);
+            GameOverUI.SetActive(true);
+            Time.timeScale = 0f;     
+    }
+
+    public void EndGame2 ()
+    {
+
     }
     public void Replay()
     {

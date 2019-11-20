@@ -17,6 +17,7 @@ TagManager:
   - PaperBag
   - Waypoints
   - ParticleSystem
+  - BoolKeeper
   layers:
   - Default
   - TransparentFX

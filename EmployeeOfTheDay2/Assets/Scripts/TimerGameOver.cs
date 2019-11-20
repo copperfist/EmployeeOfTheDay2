@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class TimerGameOver : MonoBehaviour
+public class TimerGameOver : GameManager
 {
-    public int countDownStartValue = 240;
+    public int countDownStartValue = 10;
     public Text timerUI;
+   
     void Start()
     {
         countDownTimer();
     }
     
-    void countDownTimer()
+    public void countDownTimer()
     {
         if (countDownStartValue > 0)
         {
@@ -27,7 +28,11 @@ public class TimerGameOver : MonoBehaviour
             Invoke("countDownTimer", 1.0f); 
         }else
         {
-            FindObjectOfType<GameManager>().EndGame();
+            
+
+            gameHasEnded = true;
+            StartCoroutine(EndGame());
+            //EndGame();
             timerUI.text = "00:00";
             
         }

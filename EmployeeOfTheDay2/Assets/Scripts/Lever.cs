@@ -22,6 +22,8 @@ public class Lever : MonoBehaviour
         if (other.GetComponent<ObjectInteraction>().leverAction == true)
         {
             leverAnimator.SetBool("LeverPressed", true);
+            //other.GetComponent<ConveyerWaypoints>().speed == 2;
+            
 
         }
 
