@@ -8,6 +8,7 @@ public class SpawnPaperBag : MonoBehaviour
     private GameObject paperBagClone;
 
     private bool makeNewBag = false;
+    public GameObject moneySplash;
 
     public static int points = 0;
 
@@ -20,8 +21,10 @@ public class SpawnPaperBag : MonoBehaviour
     public void Update()
     {
         makeNewBag = PaperBag.BagIsFull;
+
         if (makeNewBag == true)
         {
+            Instantiate(moneySplash, transform);
             ScoreManager.score += 10;
 
             StartCoroutine(SpawnNewBag());

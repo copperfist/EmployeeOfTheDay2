@@ -10,6 +10,8 @@ public class PaperBag : MonoBehaviour
     public GameObject entrance;
 
 
+
+
     //Picking items for the bag
     public string[] products = new string[6]; //Holds all product tags
     private int randomIndex;
@@ -20,7 +22,7 @@ public class PaperBag : MonoBehaviour
     private int shoppingList;
 
     public static bool BagIsFull = false;
-    
+
     //List of UI items
     public GameObject banana;
     public GameObject bread;
@@ -73,11 +75,10 @@ public class PaperBag : MonoBehaviour
             Destroy(other.gameObject);//Destory item
 
             if (itemsInBag >= shoppingList)//Shopping list full
-            {
+            {    
                 itemsInBag = 0;
-
                 Debug.Log("Shopping Bag Full");
-
+                //NPC.GetComponent<Animator>().SetTrigger("Leave");
                 CheckPaperBag();
             }
             else
@@ -90,11 +91,7 @@ public class PaperBag : MonoBehaviour
     }
     public void CheckPaperBag()
     {
-        //Debug.Log("Checking Paper Bag");
-
         BagIsFull = true;
-
-        //Debug.Log(BagIsFull);
     }
 
     public void Item_UI()//Check which item is picked and display correct ui
@@ -120,7 +117,7 @@ public class PaperBag : MonoBehaviour
             uiUpdate = false;
 
         }
-        else if(chosenItem == "Bread")
+        else if (chosenItem == "Bread")
         {
             Debug.Log("Bread UI");
 
@@ -134,7 +131,7 @@ public class PaperBag : MonoBehaviour
             uiUpdate = false;
 
         }
-        else if(chosenItem == "Ham")
+        else if (chosenItem == "Ham")
         {
             //Debug.Log("Ham UI");
 
@@ -148,7 +145,7 @@ public class PaperBag : MonoBehaviour
 
 
         }
-        else if(chosenItem == "Onion")
+        else if (chosenItem == "Onion")
         {
             //Debug.Log("Onion UI");
 
@@ -161,7 +158,7 @@ public class PaperBag : MonoBehaviour
             uiUpdate = false;
 
         }
-        else if(chosenItem == "Soup")
+        else if (chosenItem == "Soup")
         {
             //Debug.Log("Soup UI");
 
