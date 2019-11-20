@@ -25667,7 +25667,7 @@ MonoBehaviour:
   TimesUpUI: {fileID: 6414840034648687203}
   GameOverUI: {fileID: 438865346}
   GameObject: {fileID: 6414840035762555498}
-  countDownStartValue: 10
+  countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}
 --- !u!114 &6414840035762555499
 MonoBehaviour:

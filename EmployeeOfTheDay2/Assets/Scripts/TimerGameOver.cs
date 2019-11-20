@@ -6,7 +6,7 @@ using System;
 
 public class TimerGameOver : GameManager
 {
-    public int countDownStartValue = 10;
+    public int countDownStartValue = 240;
     public Text timerUI;
    
     void Start()
