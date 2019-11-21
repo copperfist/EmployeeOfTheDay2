@@ -8,7 +8,8 @@ public class ScoreManager : MonoBehaviour
     public static int score = 0;        // The player's score.
 
     
-    public Text scoreText;     // Reference to the Text component.
+    public Text scoreText; // Reference to the Text component.
+    public Text scoreGameOver;
 
     
     void Start()
@@ -22,6 +23,7 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = score.ToString(); 
+        scoreText.text = score.ToString();
+        scoreGameOver.text = score.ToString();
     }
 }

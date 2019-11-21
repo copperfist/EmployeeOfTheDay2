@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
        
             Debug.Log("Time's Up!");
             TimesUpUI.SetActive(true);
-            yield return new WaitForSecondsRealtime(5);
+            yield return new WaitForSecondsRealtime(3);
             Debug.Log("done waiting");
             TimesUpUI.SetActive(false);
             GameOverUI.SetActive(true);
