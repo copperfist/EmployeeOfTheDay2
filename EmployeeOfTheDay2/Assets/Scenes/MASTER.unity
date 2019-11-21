@@ -12219,6 +12219,11 @@ PrefabInstance:
       propertyPath: GameObject
       value: 
       objectReference: {fileID: 6414840035762555498}
+    - target: {fileID: 2608410082067275259, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: GameOverUI2
+      value: 
+      objectReference: {fileID: 25435301}
     - target: {fileID: 2608410082067275237, guid: a9cb09f48ffcc68438446c9508130569,
         type: 3}
       propertyPath: pauseMenuUI
@@ -20955,7 +20960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.9, y: 3.0019813}
+  m_AnchoredPosition: {x: 46.3, y: 3.0019813}
   m_SizeDelta: {x: 34.29, y: 31.546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225348319
@@ -34416,7 +34421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 91.09993, y: 3.0019813}
+  m_AnchoredPosition: {x: 92, y: 3.0019813}
   m_SizeDelta: {x: 34.29, y: 31.546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843978485
@@ -41401,7 +41406,9 @@ MonoBehaviour:
   gameHasEnded: 0
   TimesUpUI: {fileID: 6414840034648687203}
   GameOverUI: {fileID: 438865346}
+  GameOverUI2: {fileID: 0}
   GameObject: {fileID: 6414840035762555498}
+  interactCtrl: Interact_P1
   countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}
 --- !u!114 &6414840035762555499

@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour
     public bool gameHasEnded;
     public GameObject TimesUpUI;
     public GameObject GameOverUI;
+    public GameObject GameOverUI2;
     public TimerGameOver GameObject;
+    public string interactCtrl = "Interact_P1";
 
     void Start()
     {
@@ -24,13 +26,25 @@ public class GameManager : MonoBehaviour
     public IEnumerator EndGame ()
     {
        
-            Debug.Log("Time's Up!");
+            
+            Time.timeScale = 0f;
             TimesUpUI.SetActive(true);
+
             yield return new WaitForSecondsRealtime(3);
-            Debug.Log("done waiting");
+            
             TimesUpUI.SetActive(false);
             GameOverUI.SetActive(true);
-            Time.timeScale = 0f;     
+            
+
+
+            if (Input.GetButtonDown(interactCtrl))
+            {
+                Debug.Log("button pressed");
+                GameOverUI.SetActive(false);
+                GameOverUI2.SetActive(true);
+                Time.timeScale = 0f;
+            }
+        
     }
 
     public void EndGame2 ()
