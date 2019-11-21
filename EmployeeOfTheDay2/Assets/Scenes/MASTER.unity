@@ -23008,8 +23008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 75.17997, y: 14.100006}
-  m_SizeDelta: {x: -193.89, y: -334.17}
+  m_AnchoredPosition: {x: 74.6, y: 14.100006}
+  m_SizeDelta: {x: -211.71, y: -334.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426182202
 MonoBehaviour:
@@ -23060,9 +23060,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: 23255d683a6eae041bcb67f95f2fdfd4, type: 3}
+    m_FontSize: 28
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 55
@@ -37180,8 +37180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -35, y: 14.100021}
-  m_SizeDelta: {x: -124.869934, y: -334.16998}
+  m_AnchoredPosition: {x: -26.1, y: 14.099998}
+  m_SizeDelta: {x: -103.68, y: -334.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099845541
 MonoBehaviour:
@@ -37202,9 +37202,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: 23255d683a6eae041bcb67f95f2fdfd4, type: 3}
+    m_FontSize: 28
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 55
@@ -37214,7 +37214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Amount earned -
+  m_Text: Amount earned  -
 --- !u!222 &2099845542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -40733,7 +40733,7 @@ MonoBehaviour:
   TimesUpUI: {fileID: 6414840034648687203}
   GameOverUI: {fileID: 438865346}
   GameObject: {fileID: 6414840035762555498}
-  countDownStartValue: 30
+  countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}
 --- !u!114 &6414840035762555499
 MonoBehaviour:
