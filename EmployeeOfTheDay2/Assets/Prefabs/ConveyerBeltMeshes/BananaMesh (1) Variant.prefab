@@ -16,6 +16,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!65 &1432232714440958124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078733244778925971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32992265, y: 0.45037568, z: 0.6008379}
+  m_Center: {x: -0.27108, y: 0.23072726, z: -0.06936031}
 --- !u!65 &6055749132752674762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41,25 +54,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guide: {fileID: 6517208822339228510, guid: dd3099902b44067489177aba39e217d9, type: 3}
+  item: {fileID: 7794217185181999437, guid: dd3099902b44067489177aba39e217d9, type: 3}
+  throwForce: 10
+  playerAnimator: {fileID: 1147606617, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
+  interactCtrl: Interact_P1
+  leverReady: 0
+  leverAction: 0
+  canHold: 0
   target:
   - {fileID: 4754436151659986774, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
   - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
   waypointDistance: 0.2
---- !u!65 &1432232714440958124
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078733244778925971}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.32992265, y: 0.45037568, z: 0.6008379}
-  m_Center: {x: -0.27108, y: 0.23072726, z: -0.06936031}
 --- !u!1001 &9068423626335491738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70,13 +78,18 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
       propertyPath: m_Name
-      value: BananaMesh (1)
+      value: BananaMesh (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
       propertyPath: m_TagString
       value: Banana
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 03217a3dbc4cbf3469468e82ba0d4062,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae0e4a5511d692b40a0341d9f16d0a59, type: 2}
     - target: {fileID: -4216859302048453862, guid: 03217a3dbc4cbf3469468e82ba0d4062,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -132,11 +145,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1504981713932161579, guid: 03217a3dbc4cbf3469468e82ba0d4062,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ae0e4a5511d692b40a0341d9f16d0a59, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03217a3dbc4cbf3469468e82ba0d4062, type: 3}
 --- !u!1 &1078733244778925971 stripped

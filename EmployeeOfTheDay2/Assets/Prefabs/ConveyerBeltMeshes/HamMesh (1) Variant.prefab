@@ -67,6 +67,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guide: {fileID: 6517208822339228510, guid: dd3099902b44067489177aba39e217d9, type: 3}
+  item: {fileID: 7794217185181999437, guid: dd3099902b44067489177aba39e217d9, type: 3}
+  throwForce: 10
+  playerAnimator: {fileID: 1147606617, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
+  interactCtrl: Interact_P1
+  leverReady: 0
+  leverAction: 0
+  canHold: 0
   target:
   - {fileID: 4754436151659986774, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
@@ -83,13 +91,18 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a7d0c741a8c29fa478807121e896ed3f,
         type: 3}
       propertyPath: m_Name
-      value: HamMesh (2)
+      value: HamMesh (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: a7d0c741a8c29fa478807121e896ed3f,
         type: 3}
       propertyPath: m_TagString
       value: Ham
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a7d0c741a8c29fa478807121e896ed3f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51895297a928b1747b1aed48b1499b99, type: 2}
     - target: {fileID: -4216859302048453862, guid: a7d0c741a8c29fa478807121e896ed3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -160,11 +173,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1505462
       objectReference: {fileID: 0}
-    - target: {fileID: -1504981713932161579, guid: a7d0c741a8c29fa478807121e896ed3f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 51895297a928b1747b1aed48b1499b99, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d0c741a8c29fa478807121e896ed3f, type: 3}
 --- !u!1 &2300675588104501499 stripped

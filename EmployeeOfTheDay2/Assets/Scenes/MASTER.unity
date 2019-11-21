@@ -12718,6 +12718,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811073348}
   m_Mesh: {fileID: 76719411}
+--- !u!4 &819268034 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8632627388242355434, guid: 306ce1c9c70a86943911d8de15afdeb5,
+    type: 3}
+  m_PrefabInstance: {fileID: 64361362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &825822004
 GameObject:
   m_ObjectHideFlags: 0
@@ -22398,6 +22404,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba74365cc275818488f0ac10a26acdcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guide: {fileID: 819268034}
+  item: {fileID: 0}
+  throwForce: 10
+  playerAnimator: {fileID: 1342254865}
+  interactCtrl: Interact_P1
+  leverReady: 0
+  leverAction: 0
+  canHold: 0
   banana: {fileID: 1078733244778925971, guid: fa24e8e1bb754834488a87bda90b6ee7, type: 3}
   bread: {fileID: 5987116898740808470, guid: 3a0e93776f4a5a048a4b93d643b9d39b, type: 3}
   ham: {fileID: 2300675588104501499, guid: 18bbe35e57851934093ad914f17515f3, type: 3}
@@ -22552,6 +22566,12 @@ Transform:
   m_Father: {fileID: 1209439327}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1342254865 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7676759342325709483, guid: dd3099902b44067489177aba39e217d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2189590041247173096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1343710572
 GameObject:
   m_ObjectHideFlags: 0

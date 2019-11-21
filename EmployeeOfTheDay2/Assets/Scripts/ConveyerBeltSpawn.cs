@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConveyerBeltSpawn : MonoBehaviour
+public class ConveyerBeltSpawn : ObjectInteraction
 {
     //prefabs
     public GameObject banana, bread, ham, onion, soup, tomato;
@@ -48,6 +48,11 @@ public class ConveyerBeltSpawn : MonoBehaviour
             }
 
             nextSpawn = Time.time + spawnRate;
+        }
+
+        if (leverAction == true)
+        {
+            spawnRate = 1f;
         }
     }
 

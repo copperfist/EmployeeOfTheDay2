@@ -41,6 +41,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guide: {fileID: 6517208822339228510, guid: dd3099902b44067489177aba39e217d9, type: 3}
+  item: {fileID: 7794217185181999437, guid: dd3099902b44067489177aba39e217d9, type: 3}
+  throwForce: 10
+  playerAnimator: {fileID: 1147606617, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
+  interactCtrl: Interact_P1
+  leverReady: 0
+  leverAction: 0
+  canHold: 0
   target:
   - {fileID: 4754436151659986774, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
@@ -57,7 +65,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_Name
-      value: TomatoMesh (1)
+      value: TomatoMesh (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
@@ -119,11 +127,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1399040816690301744, guid: a6d5525ea01da284e8ac9893d48d31c4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 38d562a484543b74996a5094e0318bc5, type: 2}
     - target: {fileID: 631771295565508327, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -134,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 17ceb3b5e21b4f440b0c74df3e7d3be4, type: 2}
+    - target: {fileID: -1399040816690301744, guid: a6d5525ea01da284e8ac9893d48d31c4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 38d562a484543b74996a5094e0318bc5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6d5525ea01da284e8ac9893d48d31c4, type: 3}
 --- !u!1 &8414643401449398599 stripped
