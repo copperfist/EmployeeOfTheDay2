@@ -35,14 +35,14 @@ public class GameManager : MonoBehaviour
             TimesUpUI.SetActive(false);
             GameOverUI.SetActive(true);
 
-            if (Input.anyKey)
-            {
-                Debug.Log("A key or mouse click has been detected");
-                Debug.Log("button pressed");
-                GameOverUI.SetActive(false);
-                GameOverUI2.SetActive(true);
-                Time.timeScale = 0f;
-            }
+            //if (Input.anyKey)
+            //{
+            //    Debug.Log("A key or mouse click has been detected");
+            //    Debug.Log("button pressed");
+            //    GameOverUI.SetActive(false);
+            //    GameOverUI2.SetActive(true);
+            //    Time.timeScale = 0f;
+            //}
 
         //if (Input.GetButtonDown(interactCtrl))
         //    {
