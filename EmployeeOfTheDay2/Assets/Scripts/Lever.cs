@@ -8,6 +8,8 @@ public class Lever : MonoBehaviour
     public GameObject player;
     public Animator leverAnimator;
     public bool leverAnimate = false;
+    public bool leverOn = false;
+   
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,14 +24,15 @@ public class Lever : MonoBehaviour
         if (other.GetComponent<ObjectInteraction>().leverAction == true)
         {
             leverAnimator.SetBool("LeverPressed", true);
-            //other.GetComponent<ConveyerWaypoints>().speed == 2;
-            
+            leverOn = true;
+           
 
         }
 
         if (other.GetComponent<ObjectInteraction>().leverAction == false)
         {
             leverAnimator.SetBool("LeverPressed", false);
+            leverOn = false;
 
         }
     }

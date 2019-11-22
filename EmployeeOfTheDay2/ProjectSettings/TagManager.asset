@@ -18,6 +18,7 @@ TagManager:
   - Waypoints
   - ParticleSystem
   - BoolKeeper
+  - Lever
   layers:
   - Default
   - TransparentFX

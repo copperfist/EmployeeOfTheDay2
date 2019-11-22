@@ -41,19 +41,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guide: {fileID: 6517208822339228510, guid: dd3099902b44067489177aba39e217d9, type: 3}
-  item: {fileID: 7794217185181999437, guid: dd3099902b44067489177aba39e217d9, type: 3}
-  throwForce: 10
-  playerAnimator: {fileID: 1147606617, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
-  interactCtrl: Interact_P1
-  leverReady: 0
-  leverAction: 0
-  canHold: 0
   target:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   speed: 2
+  otherObject: {fileID: 4418695050384580021}
   waypointDistance: 0.2
 --- !u!1001 &5653062802281874620
 PrefabInstance:

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConveyerBeltSpawn : ObjectInteraction
+public class ConveyerBeltSpawn : MonoBehaviour
 {
     //prefabs
     public GameObject banana, bread, ham, onion, soup, tomato;
 
     //spawn once every few seconds 
-    public float spawnRate = 3f;
+    public float spawnRate = 5f;
 
     //next spawn time
     float nextSpawn = 0f;
@@ -21,6 +21,10 @@ public class ConveyerBeltSpawn : ObjectInteraction
         if (Time.time > nextSpawn)
         {
             whatToSpawn = Random.Range(1, 7);
+
+            GameObject lever = GameObject.Find("Lever");
+
+            
 
             //instantiate a prefab 
             switch (whatToSpawn)
@@ -47,13 +51,22 @@ public class ConveyerBeltSpawn : ObjectInteraction
              
             }
 
+            if (lever.GetComponent<Lever>().leverOn == true)
+            {
+                spawnRate = 2f;
+
+            }
+
+            if (lever.GetComponent<Lever>().leverOn == false)
+            {
+                spawnRate = 5f;
+
+            }
+
             nextSpawn = Time.time + spawnRate;
         }
 
-        if (leverAction == true)
-        {
-            spawnRate = 1f;
-        }
+      
     }
 
 
