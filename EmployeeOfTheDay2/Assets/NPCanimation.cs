@@ -17,7 +17,7 @@ public class NPCanimation : MonoBehaviour
         {
             npcAnimator.SetBool("Walking", true);
 
-            Debug.Log("fast");
+            //Debug.Log("fast");
         }
 
         else

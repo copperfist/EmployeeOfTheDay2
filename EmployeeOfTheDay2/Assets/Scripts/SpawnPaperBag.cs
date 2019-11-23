@@ -7,6 +7,8 @@ public class SpawnPaperBag : MonoBehaviour
     public GameObject paperBag;
     private GameObject paperBagClone;
 
+    public AudioSource cashSound; 
+
     private bool makeNewBag = false;
     public GameObject moneySplash;
 
@@ -14,6 +16,7 @@ public class SpawnPaperBag : MonoBehaviour
 
     void Start()
     {
+        cashSound = GetComponent<AudioSource>();
         SpawnBag();
     }
     
@@ -24,7 +27,9 @@ public class SpawnPaperBag : MonoBehaviour
 
         if (makeNewBag == true)
         {
+            cashSound.Play();
             Instantiate(moneySplash, transform);
+            
             ScoreManager.score += 10;
 
             StartCoroutine(SpawnNewBag());

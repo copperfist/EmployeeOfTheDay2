@@ -46,7 +46,7 @@ public class ConveyerBeltSpawn : MonoBehaviour
                     break;
                 case 6:
                     Instantiate(tomato, transform.position, Quaternion.identity);
-                    Debug.Log("tomato spawn");
+                    //Debug.Log("tomato spawn");
                     break;
              
             }
