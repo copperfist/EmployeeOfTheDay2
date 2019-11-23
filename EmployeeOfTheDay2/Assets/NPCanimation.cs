@@ -13,9 +13,9 @@ public class NPCanimation : MonoBehaviour
     {
         speed = rb.velocity.magnitude;
 
-        if (speed >= 1)
+        if (speed == 0)
         {
-            npcAnimator.SetBool("Walking", true);
+            npcAnimator.SetBool("Walking", false);
 
             //Debug.Log("fast");
         }
