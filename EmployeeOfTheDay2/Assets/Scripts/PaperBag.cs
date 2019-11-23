@@ -8,6 +8,7 @@ public class PaperBag : MonoBehaviour
 
     public GameObject shopper;
     public GameObject entrance;
+    public GameObject currentShopper;
 
 
 
@@ -44,7 +45,7 @@ public class PaperBag : MonoBehaviour
 
         entrance = GameObject.FindGameObjectWithTag("Entrance");
 
-        Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
+        currentShopper = Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
 
         MyList();
         FindProducts();
@@ -78,7 +79,7 @@ public class PaperBag : MonoBehaviour
             {    
                 itemsInBag = 0;
                 Debug.Log("Shopping Bag Full");
-                //NPC.GetComponent<Animator>().SetTrigger("Leave");
+                currentShopper.GetComponent<Animator>().SetBool("Leave", true);
                 CheckPaperBag();
             }
             else
