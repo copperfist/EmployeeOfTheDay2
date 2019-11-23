@@ -10,8 +10,10 @@ public class PaperBag : MonoBehaviour
     public GameObject entrance;
     public GameObject currentShopper;
 
-
-
+    private AudioSource audio;
+    public AudioClip[] itemInBag;
+    private AudioClip itemInBagClip;
+    
 
     //Picking items for the bag
     public string[] products = new string[6]; //Holds all product tags
@@ -45,7 +47,11 @@ public class PaperBag : MonoBehaviour
 
         entrance = GameObject.FindGameObjectWithTag("Entrance");
 
+        audio = gameObject.GetComponent<AudioSource>();
+
         currentShopper = Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
+
+        
 
         MyList();
         FindProducts();
@@ -72,15 +78,27 @@ public class PaperBag : MonoBehaviour
     {
         if (other.gameObject.tag == chosenItem)
         {
+
             itemsInBag++;
+
+            int index = Random.Range(0, itemInBag.Length);
+            itemInBagClip = itemInBag[index];
+            audio.clip = itemInBagClip;
+            audio.Play();
+
             Destroy(other.gameObject);//Destory item
+            
 
             if (itemsInBag >= shoppingList)//Shopping list full
-            {    
+            {
+               
+
                 itemsInBag = 0;
                 Debug.Log("Shopping Bag Full");
                 currentShopper.GetComponent<Animator>().SetBool("Leave", true);
                 CheckPaperBag();
+                
+
             }
             else
             {
@@ -93,6 +111,8 @@ public class PaperBag : MonoBehaviour
     public void CheckPaperBag()
     {
         BagIsFull = true;
+
+
     }
 
     public void Item_UI()//Check which item is picked and display correct ui
