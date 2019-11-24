@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     public Animator playerAnimator;
     public GameObject runDust;
 
+    public AudioSource runSound;
+
     public string horizontalCtrl = "Horizontal_P1";
     public string verticalCtrl = "Vertical_P1";
 
@@ -23,6 +25,7 @@ public class Movement : MonoBehaviour
     {
         playerRb = gameObject.GetComponent<Rigidbody>();
         gameObject.GetComponentsInChildren<ParticleSystem>();
+        runSound = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -40,7 +43,7 @@ public class Movement : MonoBehaviour
         {
             playerAnimator.SetBool("Moving", false);
             dust.Play();
-
+            runSound.Play();
 
         }
 
