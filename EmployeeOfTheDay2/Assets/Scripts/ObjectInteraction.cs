@@ -11,6 +11,7 @@ public class ObjectInteraction : MonoBehaviour
     public string interactCtrl = "Interact_P1";
     public bool leverReady = false;
     public bool leverAction = false;
+    public ParticleSystem sweat;
 
     public bool canHold = false;
 
@@ -41,12 +42,15 @@ public class ObjectInteraction : MonoBehaviour
         {
             playerAnimator.SetBool("Lever", true);
             leverAction = true;
+
         }
 
         else if (leverReady == false || Input.GetButtonUp(interactCtrl))
         {
             playerAnimator.SetBool("Lever", false);
             leverAction = false;
+            sweat.Play();
+
         }
 
         if (item == null) //reset when item is destroyed

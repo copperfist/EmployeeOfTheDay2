@@ -9,6 +9,7 @@ public class PaperBag : MonoBehaviour
     public GameObject shopper;
     public GameObject entrance;
     public GameObject currentShopper;
+    public Animator paperBagAnimator;
 
     private AudioSource audio;
     public AudioClip[] itemInBag;
@@ -85,6 +86,7 @@ public class PaperBag : MonoBehaviour
             itemInBagClip = itemInBag[index];
             audio.clip = itemInBagClip;
             audio.Play();
+            paperBagAnimator.SetTrigger("BagAnim");
 
             Destroy(other.gameObject);//Destory item
             
