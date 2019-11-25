@@ -8,10 +8,16 @@ public class TimerGameOver : GameManager
 {
     public int countDownStartValue = 240;
     public Text timerUI;
-   
+    public AudioSource audioHolderP1;
+    public AudioSource audioHolderP2;
+    public AudioSource audioHolderP3;
+    public AudioSource audioHolderP4;
+
     void Start()
     {
         countDownTimer();
+        
+       
     }
     
     public void countDownTimer()
@@ -28,7 +34,12 @@ public class TimerGameOver : GameManager
             Invoke("countDownTimer", 1.0f); 
         }else
         {
-            
+
+            audioHolderP1.Stop();
+            audioHolderP2.Stop();
+            audioHolderP3.Stop();
+            audioHolderP4.Stop();
+
 
             gameHasEnded = true;
             StartCoroutine(EndGame());

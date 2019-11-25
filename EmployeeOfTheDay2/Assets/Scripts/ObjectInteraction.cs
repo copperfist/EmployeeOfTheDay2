@@ -41,6 +41,7 @@ public class ObjectInteraction : MonoBehaviour
         else if (Input.GetButtonDown(interactCtrl) && leverReady == true)
         {
             playerAnimator.SetBool("Lever", true);
+            sweat.Play();
             leverAction = true;
 
         }
@@ -49,7 +50,8 @@ public class ObjectInteraction : MonoBehaviour
         {
             playerAnimator.SetBool("Lever", false);
             leverAction = false;
-            sweat.Play();
+            sweat.Stop();
+
 
         }
 

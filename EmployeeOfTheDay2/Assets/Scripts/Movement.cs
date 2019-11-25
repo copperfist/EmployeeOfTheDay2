@@ -21,11 +21,17 @@ public class Movement : MonoBehaviour
 
     //github update  test
 
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         playerRb = gameObject.GetComponent<Rigidbody>();
         gameObject.GetComponentsInChildren<ParticleSystem>();
         runSound = GetComponent<AudioSource>();
+        
+
     }
 
     private void FixedUpdate()
@@ -33,17 +39,26 @@ public class Movement : MonoBehaviour
         PlayerMovement();
         PlayerAnimation();
 
+        
+
+
     }
 
     void PlayerAnimation()
     {
+        
         ParticleSystem dust = runDust.GetComponent<ParticleSystem>();
 
         if (Input.GetAxis(verticalCtrl) == 0 && Input.GetAxis(horizontalCtrl) == 0)
         {
             playerAnimator.SetBool("Moving", false);
             dust.Play();
+
+            
             runSound.Play();
+
+           
+
 
         }
 
@@ -66,7 +81,9 @@ public class Movement : MonoBehaviour
     }
 
     public void PlayerMovement()
+
     {
+
         float moveVertical = Input.GetAxis(verticalCtrl);
         float moveHorizontal = Input.GetAxis(horizontalCtrl);
 
