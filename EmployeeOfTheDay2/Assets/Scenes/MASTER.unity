@@ -7097,7 +7097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182641040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.009, y: 3.9889998, z: -7.25}
+  m_LocalPosition: {x: -2.104, y: 3.902, z: -7.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1790870696}
@@ -9451,7 +9451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417835260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.920595, y: 3.9889998, z: -4.065764}
+  m_LocalPosition: {x: 0.96, y: 3.9889998, z: -4.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1790870696}
@@ -15611,7 +15611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685197000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.864, y: 3.9889998, z: -7.283764}
+  m_LocalPosition: {x: 0.825, y: 3.9889998, z: -7.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1790870696}
@@ -17202,6 +17202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GM
       objectReference: {fileID: 0}
+    - target: {fileID: 2608410082067275237, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 6414840035616355778}
     - target: {fileID: 2608410082067275236, guid: a9cb09f48ffcc68438446c9508130569,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17282,11 +17287,6 @@ PrefabInstance:
       propertyPath: GameOverUI2
       value: 
       objectReference: {fileID: 25435301}
-    - target: {fileID: 2608410082067275237, guid: a9cb09f48ffcc68438446c9508130569,
-        type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 6414840035616355778}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9cb09f48ffcc68438446c9508130569, type: 3}
 --- !u!1 &800080634

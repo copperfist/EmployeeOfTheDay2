@@ -53,12 +53,8 @@ public class Movement : MonoBehaviour
         {
             playerAnimator.SetBool("Moving", false);
             dust.Play();
-
-            
-            runSound.Play();
-
-           
-
+     
+           // runSound.Play();
 
         }
 
