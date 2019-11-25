@@ -46,7 +46,6 @@ MonoBehaviour:
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
   - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
-  otherObject: {fileID: 8414643401449398599}
   waypointDistance: 0.2
 --- !u!1001 &569490403321362510
 PrefabInstance:
@@ -64,6 +63,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a6d5525ea01da284e8ac9893d48d31c4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6d5525ea01da284e8ac9893d48d31c4,
         type: 3}

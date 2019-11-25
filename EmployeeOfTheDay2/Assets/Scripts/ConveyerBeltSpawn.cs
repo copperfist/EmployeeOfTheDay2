@@ -48,7 +48,8 @@ public class ConveyerBeltSpawn : MonoBehaviour
                     Instantiate(tomato, transform.position, Quaternion.identity);
                     //Debug.Log("tomato spawn");
                     break;
-             
+                case 7:
+                    break;
             }
 
             if (lever.GetComponent<Lever>().leverOn == true)

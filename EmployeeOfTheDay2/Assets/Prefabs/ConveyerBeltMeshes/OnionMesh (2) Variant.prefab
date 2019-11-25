@@ -46,7 +46,6 @@ MonoBehaviour:
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
   - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
-  otherObject: {fileID: 2223616587200715110}
   waypointDistance: 0.2
 --- !u!1001 &7924702119822393455
 PrefabInstance:
@@ -64,6 +63,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Onion
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b4d37fe160b8fa14e992244d7714fb8f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: b4d37fe160b8fa14e992244d7714fb8f,
         type: 3}

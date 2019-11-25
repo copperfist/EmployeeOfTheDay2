@@ -46,7 +46,6 @@ MonoBehaviour:
   - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
   - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
-  otherObject: {fileID: 5987116898740808470}
   waypointDistance: 0.2
 --- !u!1001 &2321445144779321887
 PrefabInstance:
@@ -64,6 +63,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Bread
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: caa4845d8a294bb489acc4e6031d9289,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: caa4845d8a294bb489acc4e6031d9289,
         type: 3}

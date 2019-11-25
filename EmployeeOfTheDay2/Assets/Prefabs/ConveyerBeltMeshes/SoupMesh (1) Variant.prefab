@@ -46,7 +46,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 2
-  otherObject: {fileID: 4418695050384580021}
   waypointDistance: 0.2
 --- !u!1001 &5653062802281874620
 PrefabInstance:
@@ -64,6 +63,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Soup
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a993e7b18d310dd4db274fdfc34033fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a993e7b18d310dd4db274fdfc34033fa,
         type: 3}
