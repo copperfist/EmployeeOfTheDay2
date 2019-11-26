@@ -8,29 +8,23 @@ public class Movement : MonoBehaviour
     public float movementSpeed = 5.0f;
     public Animator playerAnimator;
     public GameObject runDust;
+    private bool isMoving = false;
 
     public AudioSource runSound;
 
     public string horizontalCtrl = "Horizontal_P1";
     public string verticalCtrl = "Vertical_P1";
 
-    private Rigidbody rb;
+    public Rigidbody rb;
     private Rigidbody playerRb;
 
     public bool isAPressed = false;
 
-    //github update  test
-
-    private void Awake()
-    {
-        
-    }
     void Start()
     {
         playerRb = gameObject.GetComponent<Rigidbody>();
         gameObject.GetComponentsInChildren<ParticleSystem>();
         runSound = GetComponent<AudioSource>();
-        
 
     }
 
@@ -38,38 +32,27 @@ public class Movement : MonoBehaviour
     {
         PlayerMovement();
         PlayerAnimation();
-
-        
-
-
     }
 
     void PlayerAnimation()
     {
-        
         ParticleSystem dust = runDust.GetComponent<ParticleSystem>();
 
         if (Input.GetAxis(verticalCtrl) == 0 && Input.GetAxis(horizontalCtrl) == 0)
         {
             playerAnimator.SetBool("Moving", false);
             dust.Play();
-     
-           runSound.Play();
-
+            runSound.Play();
         }
-
         else
         {
             playerAnimator.SetBool("Moving", true);
-            //dust.Play();
-
         }
 
         if (isAPressed == true)
         {
             playerAnimator.SetBool("Holding", true);
         }
-
         else
         {
             playerAnimator.SetBool("Holding", false);
@@ -77,17 +60,33 @@ public class Movement : MonoBehaviour
     }
 
     public void PlayerMovement()
-
     {
-
         float moveVertical = Input.GetAxis(verticalCtrl);
         float moveHorizontal = Input.GetAxis(horizontalCtrl);
 
-        Vector3 newPosition = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        transform.LookAt(newPosition + transform.position);
-        transform.Translate(newPosition * movementSpeed * Time.deltaTime, Space.World);
+        if (Input.GetAxis(verticalCtrl) > -1.0f || Input.GetAxis(horizontalCtrl) > -1.0f)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
+
+        if(isMoving == true)
+        {
+            Vector3 newPosition = new Vector3(moveHorizontal, 0.0f, moveVertical);
+            transform.LookAt(newPosition + transform.position);
+            transform.Translate(newPosition * movementSpeed * Time.deltaTime, Space.World);
+        }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
+
+ 
     }
 
 
-   
+
 }
