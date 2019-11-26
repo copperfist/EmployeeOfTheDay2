@@ -24,37 +24,26 @@ public class SpawnPaperBag : MonoBehaviour
     public void Update()
     {
         makeNewBag = PaperBag.BagIsFull;
-
         if (makeNewBag == true)
         {
             cashSound.Play();
-            Instantiate(moneySplash, transform);
-            
+            Instantiate(moneySplash, transform);            
             ScoreManager.score += 10;
-
             StartCoroutine(SpawnNewBag());
-
             PaperBag.BagIsFull = false;
         }
     }
     public void SpawnBag()
     {
         PaperBag.BagIsFull = false;
-
         paperBagClone = Instantiate(paperBag, transform.position, transform.rotation);
-
     }
 
     public IEnumerator SpawnNewBag()
     {
-
-        Debug.Log("Making a new bag");
-
+        //Debug.Log("Making a new bag");
         Destroy(paperBagClone);
-
         yield return new WaitForSeconds(2);
-
         SpawnBag();
     }
-
 }

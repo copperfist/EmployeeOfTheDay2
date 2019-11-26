@@ -11,10 +11,10 @@ public class PaperBag : MonoBehaviour
     public GameObject currentShopper;
     public Animator paperBagAnimator;
 
-    private AudioSource audio;
+    public AudioSource audioClip;
     public AudioClip[] itemInBag;
     private AudioClip itemInBagClip;
-    
+
 
     //Picking items for the bag
     public string[] products = new string[6]; //Holds all product tags
@@ -47,12 +47,8 @@ public class PaperBag : MonoBehaviour
         tomato = GameObject.Find("Tomato_UI");
 
         entrance = GameObject.FindGameObjectWithTag("Entrance");
-
-        audio = gameObject.GetComponent<AudioSource>();
-
+        audioClip = gameObject.GetComponent<AudioSource>();
         currentShopper = Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
-
-        
 
         MyList();
         FindProducts();
@@ -64,10 +60,7 @@ public class PaperBag : MonoBehaviour
     {
         randomIndex = Random.Range(0, products.Length);
         chosenItem = products[randomIndex];
-
         Item_UI();
-
-        //Debug.Log(chosenItem); //The chosen tag. This needs to be displayed in UI
     }
 
     private void MyList()
@@ -79,28 +72,21 @@ public class PaperBag : MonoBehaviour
     {
         if (other.gameObject.tag == chosenItem)
         {
-
             itemsInBag++;
-
             int index = Random.Range(0, itemInBag.Length);
             itemInBagClip = itemInBag[index];
-            audio.clip = itemInBagClip;
-            audio.Play();
+            audioClip.clip = itemInBagClip;
+            audioClip.Play();
             paperBagAnimator.SetTrigger("BagAnim");
 
-            Destroy(other.gameObject);//Destory item
-            
+            Destroy(other.gameObject);//Destory item           
 
             if (itemsInBag >= shoppingList)//Shopping list full
             {
-               
-
                 itemsInBag = 0;
                 Debug.Log("Shopping Bag Full");
                 currentShopper.GetComponent<Animator>().SetBool("Leave", true);
                 CheckPaperBag();
-                
-
             }
             else
             {
@@ -113,8 +99,6 @@ public class PaperBag : MonoBehaviour
     public void CheckPaperBag()
     {
         BagIsFull = true;
-
-
     }
 
     public void Item_UI()//Check which item is picked and display correct ui
@@ -128,7 +112,7 @@ public class PaperBag : MonoBehaviour
 
         if (chosenItem == "Banana")
         {
-            Debug.Log("Banana UI");
+            //Debug.Log("Banana UI");
 
             bananaIMG.enabled = true;
             breadIMG.enabled = false;
@@ -142,7 +126,7 @@ public class PaperBag : MonoBehaviour
         }
         else if (chosenItem == "Bread")
         {
-            Debug.Log("Bread UI");
+            //Debug.Log("Bread UI");
 
             bananaIMG.enabled = false;
             breadIMG.enabled = true;
@@ -197,8 +181,6 @@ public class PaperBag : MonoBehaviour
         else //Tomato
         {
             //Debug.Log("Tomato UI");
-
-
             bananaIMG.enabled = false;
             breadIMG.enabled = false;
             hamIMG.enabled = false;
@@ -206,7 +188,6 @@ public class PaperBag : MonoBehaviour
             soupIMG.enabled = false;
             tomatoIMG.enabled = true;
             uiUpdate = false;
-
         }
     }
 }

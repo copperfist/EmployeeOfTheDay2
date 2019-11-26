@@ -127,6 +127,7 @@ MonoBehaviour:
   entrance: {fileID: 0}
   currentShopper: {fileID: 0}
   paperBagAnimator: {fileID: 7010383842864193211}
+  audioClip: {fileID: 0}
   itemInBag:
   - {fileID: 8300000, guid: 49a16950937a08f4283c688385475954, type: 3}
   - {fileID: 8300000, guid: ba8257a976ea11c4184f013a839e59bf, type: 3}
@@ -160,7 +161,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0

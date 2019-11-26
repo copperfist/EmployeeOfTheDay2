@@ -23,7 +23,6 @@ public class ObjectInteraction : MonoBehaviour
         {
             item.GetComponent<Rigidbody>().useGravity = false;
             item.GetComponent<Rigidbody>().isKinematic = true;
-
             item.transform.position = guide.transform.position;
             item.transform.rotation = guide.transform.rotation;
             item.transform.parent = transform;
@@ -43,7 +42,6 @@ public class ObjectInteraction : MonoBehaviour
             playerAnimator.SetBool("Lever", true);
             sweat.Play();
             leverAction = true;
-
         }
 
         else if (leverReady == false || Input.GetButtonUp(interactCtrl))
@@ -51,8 +49,6 @@ public class ObjectInteraction : MonoBehaviour
             playerAnimator.SetBool("Lever", false);
             leverAction = false;
             sweat.Stop();
-
-
         }
 
         if (item == null) //reset when item is destroyed
@@ -60,7 +56,7 @@ public class ObjectInteraction : MonoBehaviour
             canHold = false;
         }
 
-        /*if (Input.GetKey("joystick button 1"))
+        /*if (Input.GetKey("joystick button 1")) //Throw
         {
             rb.AddForce(throwForce, 0f, 0f);
             isAPressed = false;
