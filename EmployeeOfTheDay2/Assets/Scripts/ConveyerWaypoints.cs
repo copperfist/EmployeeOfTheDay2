@@ -76,7 +76,7 @@ public class ConveyerWaypoints : MonoBehaviour
             //Move to waypoint 2
             if (waypoint1Dist < waypointDistance)
             {
-                Debug.Log("Going to point 2");
+                //Debug.Log("Going to point 2");
                 newSpawn = false;
                 targetVector = waypoint2.transform.position;
             }
