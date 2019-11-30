@@ -10,7 +10,7 @@ public class MenuScript : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Concept Level 1");
+        SceneManager.LoadScene("MASTER");
     }
 
     public void LevelSelect()
@@ -30,12 +30,12 @@ public class MenuScript : MonoBehaviour
 
     public void OneOneSelect()
     {
-        SceneManager.LoadScene("Concept Level 1");
+        SceneManager.LoadScene("MASTER");
     }
 
     public void OneTwoSelect()
     {
-        SceneManager.LoadScene("Level 1-2");
+        SceneManager.LoadScene("MASTER Level 2");
     }
 
     public void OneThreeSelect()
