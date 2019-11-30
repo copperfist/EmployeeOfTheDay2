@@ -12,12 +12,12 @@ public class PauseMenu : MonoBehaviour
 
     //public static PauseMenu instance;
 
-
+    public string pauseCtrl;
     
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown(pauseCtrl))
         {
             if (GameIsPaused)
             {
