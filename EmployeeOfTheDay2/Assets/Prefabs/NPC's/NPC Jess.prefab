@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 8632627387863571582}
   - component: {fileID: 8632627387863571583}
   - component: {fileID: 1147606617}
+  - component: {fileID: 5368882634475761145}
   m_Layer: 0
   m_Name: NPC Jess
   m_TagString: Player
@@ -172,6 +173,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5368882634475761145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632627387863571552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60184e64ab16b7468bf7ec0a2a55ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcAnimator: {fileID: 6876175982397722754}
+  Walking: 0
 --- !u!1 &8632627388242355433
 GameObject:
   m_ObjectHideFlags: 0

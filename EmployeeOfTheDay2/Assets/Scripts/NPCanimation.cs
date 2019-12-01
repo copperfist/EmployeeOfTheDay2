@@ -6,24 +6,28 @@ public class NPCanimation : MonoBehaviour
 {
 
     public Animator npcAnimator;
-    public Rigidbody rb;
-    public float speed;
+    public bool Walking = false;
 
-    void FixedUpdate()
+
+    private void OnTriggerStay(Collider other)
     {
-        speed = rb.velocity.magnitude;
-
-        if (speed == 0)
+        if (other.tag == "npcIdleBox")
         {
             npcAnimator.SetBool("Walking", false);
-
-            //Debug.Log("fast");
         }
 
         else
         {
-            npcAnimator.SetBool("Walking", false);
+            npcAnimator.SetBool("Walking", true);
 
         }
+
+        if (other.tag == "npcKillBox")
+        {
+            Destroy(gameObject);
+        }
+
     }
+
+
 }
