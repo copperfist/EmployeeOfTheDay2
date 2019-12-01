@@ -9,6 +9,11 @@ public class Lever : MonoBehaviour
     public Animator leverAnimator;
     public bool leverAnimate = false;
     public bool leverOn = false;
+
+    public AudioSource leverDown;
+    public AudioSource leverUp;
+
+    
    
 
     private void OnTriggerEnter(Collider other)
@@ -18,6 +23,10 @@ public class Lever : MonoBehaviour
 
     }
 
+    void sound ()
+    {
+        leverDown.Play();
+    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -25,7 +34,9 @@ public class Lever : MonoBehaviour
         {
             leverAnimator.SetBool("LeverPressed", true);
             leverOn = true;
-           
+            leverUp.Play();
+            
+            
 
         }
 
@@ -33,6 +44,7 @@ public class Lever : MonoBehaviour
         {
             leverAnimator.SetBool("LeverPressed", false);
             leverOn = false;
+            Invoke("sound", 1);
 
         }
     }
