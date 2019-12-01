@@ -12,13 +12,11 @@ public class carLeftSide : MonoBehaviour
     {
         transform.Translate(-speed * Time.deltaTime, 0, 0);
 
-
-
     }
 
     void OnCollisionEnter()
     {
-        
+        //KILL PLAYER
 
     }
 
