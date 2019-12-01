@@ -19,6 +19,8 @@ TagManager:
   - ParticleSystem
   - BoolKeeper
   - Lever
+  - Car
+  - Destroy
   layers:
   - Default
   - TransparentFX
