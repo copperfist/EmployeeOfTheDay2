@@ -7,7 +7,7 @@ public class DestroyCar : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("enter");
+        
 
         if (other.gameObject.tag == "Car")
         {
