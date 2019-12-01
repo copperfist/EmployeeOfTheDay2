@@ -53,6 +53,8 @@ public class PaperBag : MonoBehaviour
         player3 = GameObject.Find("Player 3");
         player4 = GameObject.Find("Player 4");
 
+        int npcIndex = Random.Range(0, shopperPrefab.Length);
+
         banana = GameObject.Find("Banana_UI");
         bread = GameObject.Find("Bread_UI");
         ham = GameObject.Find("Ham_UI");
