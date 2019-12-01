@@ -15,9 +15,7 @@ public class TimerGameOver : GameManager
 
     void Start()
     {
-        countDownTimer();
-        
-       
+        countDownTimer();              
     }
     
     public void countDownTimer()
