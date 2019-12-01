@@ -40057,7 +40057,7 @@ MonoBehaviour:
   GameObject: {fileID: 6414840035762555498}
   interactCtrl: Interact_P1
   GameOver2: 0
-  countDownStartValue: 10
+  countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}
   audioHolderP1: {fileID: 1420051855}
   audioHolderP2: {fileID: 301995183}
