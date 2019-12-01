@@ -16538,6 +16538,11 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 6414840035616355778}
+    - target: {fileID: 2608410082067275237, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: pauseCtrl
+      value: ControllerPause
+      objectReference: {fileID: 0}
     - target: {fileID: 2608410082067275236, guid: a9cb09f48ffcc68438446c9508130569,
         type: 3}
       propertyPath: m_LocalPosition.x
