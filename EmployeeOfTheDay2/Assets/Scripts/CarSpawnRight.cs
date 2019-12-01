@@ -12,11 +12,10 @@ public class CarSpawnRight : MonoBehaviour
 
     int whatToSpawn;
 
-    void Update()
+    public void Update()
     {
 
-
-        if (Time.deltaTime > nextSpawn)
+        if (Time.time > nextSpawn)
         {
             whatToSpawn = Random.Range(1, 3);
             Debug.Log(whatToSpawn);
@@ -31,8 +30,12 @@ public class CarSpawnRight : MonoBehaviour
                     Instantiate(car2, transform.position, transform.rotation);
                     break;
             }
+                
+            nextSpawn = Time.time + spawnRate;
+            
+            
         }
 
-        nextSpawn = Time.deltaTime + spawnRate;
+       
     }
 }
