@@ -19,13 +19,12 @@ public class carRightSide : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        
-
         if (other.gameObject.tag == "Destroy")
         {
 
             Destroy(gameObject);
         }
     }
+
 
 }

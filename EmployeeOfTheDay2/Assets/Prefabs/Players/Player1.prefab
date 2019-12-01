@@ -9560,7 +9560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8632627387863571552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.77}
+  m_LocalPosition: {x: 6.96, y: 1.71, z: -13.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8632627388242355434}
@@ -9647,6 +9647,7 @@ MonoBehaviour:
   runSound: {fileID: 0}
   horizontalCtrl: Horizontal_P1
   verticalCtrl: Vertical_P1
+  rb: {fileID: 0}
   isAPressed: 0
 --- !u!54 &8632627387863571582
 Rigidbody:
@@ -14552,11 +14553,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8632627387863571581}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_Name
-      value: BigMikeRun
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14611,6 +14607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_Name
+      value: BigMikeRun
       objectReference: {fileID: 0}
     - target: {fileID: 173903945231216161, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
