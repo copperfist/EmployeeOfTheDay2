@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class ScoreManagerPlayer : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class ScoreManagerPlayer : MonoBehaviour
 
     private static int[] scores = { p1Score, p2Score, p3Score, p4Score };
 
+    public static GameObject mikePic;
+    public static GameObject bunnyPic;
+    public static GameObject monkeyPic;
+    public static GameObject sharkPic;
 
     //private void Update()
     //{
@@ -34,27 +39,30 @@ public class ScoreManagerPlayer : MonoBehaviour
     //Find the Employee of the day
     public static void EOTD()
     {
+        
 
-        highestPlayer = Mathf.Max(currentScoreP1, currentScoreP2, currentScoreP3, currentScoreP4);
+     highestPlayer = Mathf.Max(currentScoreP1, currentScoreP2, currentScoreP3, currentScoreP4);
 
         if (highestPlayer == currentScoreP1)
         {
             Debug.Log("Player 1 wins");
+            mikePic.SetActive(true);
         }
         else if (highestPlayer == currentScoreP2)
         {
             Debug.Log("Player 2 wins");
+            monkeyPic.SetActive(true);
 
         }
         else if (highestPlayer == currentScoreP3)
         {
             Debug.Log("Player 3 wins");
-
+            sharkPic.SetActive(true);
         }
         else if (highestPlayer == currentScoreP4)
         {
             Debug.Log("Player 4 wins");
-
+            bunnyPic.SetActive(true);
         }
         else
         {
