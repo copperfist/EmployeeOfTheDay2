@@ -24,7 +24,6 @@ public class Movement : MonoBehaviour
         playerRb = gameObject.GetComponent<Rigidbody>();
         gameObject.GetComponentsInChildren<ParticleSystem>();
         runSound = GetComponent<AudioSource>();
-
     }
 
     private void FixedUpdate()
