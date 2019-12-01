@@ -16,10 +16,16 @@ public class carRightSide : MonoBehaviour
 
     }
 
-    void OnCollisionEnter()
+    private void OnTriggerEnter(Collider other)
     {
-        
 
+        Debug.Log("enter");
+
+        if (other.gameObject.tag == "Destroy")
+        {
+
+            Destroy(gameObject);
+        }
     }
 
 }

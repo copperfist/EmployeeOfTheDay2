@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44947922, g: 0.49645936, b: 0.55907774, a: 1}
+  m_IndirectSpecularColor: {r: 0.44947958, g: 0.49645966, b: 0.5590785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7011,7 +7011,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1c70d9f6934a72f42976cf9ee577639e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c70d9f6934a72f42976cf9ee577639e,
         type: 3}
@@ -14240,7 +14240,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1c70d9f6934a72f42976cf9ee577639e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c70d9f6934a72f42976cf9ee577639e,
         type: 3}
@@ -19042,7 +19042,7 @@ MonoBehaviour:
   GameObject: {fileID: 6414840035762555498}
   interactCtrl: Interact_P1
   GameOver2: 0
-  countDownStartValue: 5
+  countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}
   audioHolderP1: {fileID: 8632627387801833460}
   audioHolderP2: {fileID: 123}
