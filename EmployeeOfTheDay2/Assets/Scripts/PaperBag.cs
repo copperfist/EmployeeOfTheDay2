@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class PaperBag : MonoBehaviour
 {
+    //Random customer selection
+    public GameObject[] shopperPrefab;
+
+
 
     public GameObject shopper;
     public GameObject entrance;
@@ -39,6 +43,9 @@ public class PaperBag : MonoBehaviour
 
     private void Start()
     {
+
+        int npcIndex = Random.Range(0, shopperPrefab.Length);
+
         banana = GameObject.Find("Banana_UI");
         bread = GameObject.Find("Bread_UI");
         ham = GameObject.Find("Ham_UI");
@@ -48,7 +55,7 @@ public class PaperBag : MonoBehaviour
 
         entrance = GameObject.FindGameObjectWithTag("Entrance");
         audioClip = gameObject.GetComponent<AudioSource>();
-        currentShopper = Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
+        currentShopper = Instantiate(shopperPrefab[npcIndex], entrance.transform.position, entrance.transform.rotation);
 
         MyList();
         FindProducts();
