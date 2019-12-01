@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pavement
+  m_Name: Wall4
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -37,11 +37,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 0.4, y: 0.4}
+        m_Scale: {x: 0.3, y: 0.3}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 596ce08758b3a21468aafb5829267ce8, type: 3}
-        m_Scale: {x: 0.4, y: 0.4}
+        m_Texture: {fileID: 2800000, guid: 6114f0f79836a934dbdcdc56b67e9f3e, type: 3}
+        m_Scale: {x: 0.3, y: 0.3}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8679245, g: 0.79013884, b: 0.8601459, a: 1}
+    - _Color: {r: 0.9294118, g: 0.91372555, b: 0.8470589, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
