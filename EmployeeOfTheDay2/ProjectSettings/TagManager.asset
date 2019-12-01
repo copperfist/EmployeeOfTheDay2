@@ -25,6 +25,8 @@ TagManager:
   - Player 4
   - Destroy
   - Car
+  - npcIdleBox
+  - npcKillBox
   layers:
   - Default
   - TransparentFX
