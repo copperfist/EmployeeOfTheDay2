@@ -10,7 +10,7 @@ public class carLeftSide : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(- speed * Time.deltaTime, 0, 0);
+        transform.Translate(-speed * Time.deltaTime, 0, 0);
 
 
 

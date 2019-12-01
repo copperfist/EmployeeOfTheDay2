@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarSpawnRight : MonoBehaviour
+public class CarSpawnLeft : MonoBehaviour
 {
     public GameObject car1, car2, car3;
 
