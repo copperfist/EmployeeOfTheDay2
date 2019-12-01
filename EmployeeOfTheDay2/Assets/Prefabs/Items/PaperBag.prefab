@@ -123,6 +123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de36524b6d161c14498cd19faba0ee1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopperPrefab:
+  - {fileID: 8632627387863571552, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
+  - {fileID: 8632627387863571552, guid: 200c394fa93131d439dbe302f1b461b0, type: 3}
+  - {fileID: 8632627387863571552, guid: 3682469807b8f2b4082b17cd120ed3f1, type: 3}
+  - {fileID: 8632627387863571552, guid: f7d5204a28fb5564e8ee5c792251d918, type: 3}
+  - {fileID: 8632627387863571552, guid: 25c31a6666a6c2744a27143f145f5f28, type: 3}
   shopper: {fileID: 8632627387863571552, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
   entrance: {fileID: 0}
   currentShopper: {fileID: 0}
@@ -4880,7 +4886,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0

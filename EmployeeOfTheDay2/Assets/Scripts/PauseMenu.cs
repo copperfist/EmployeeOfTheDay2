@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,12 +12,12 @@ public class PauseMenu : MonoBehaviour
 
     //public static PauseMenu instance;
 
-
+    public string pauseCtrl;
     
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown(pauseCtrl))
         {
             if (GameIsPaused)
             {
@@ -50,6 +51,12 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        Time.timeScale = 1f;
     }
 
     public void Quit()

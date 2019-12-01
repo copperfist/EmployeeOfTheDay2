@@ -7,20 +7,23 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public GameObject levelPanel;
+    public GameObject mainMenuPanel;
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Concept Level 1");
+        SceneManager.LoadScene("MASTER");
     }
 
     public void LevelSelect()
     {
+        mainMenuPanel.SetActive(false);
         levelPanel.SetActive(true);
     }
 
     public void ExitLevelSelect()
     {
         levelPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
     }
 
     public void TutorialSelect()
@@ -30,12 +33,12 @@ public class MenuScript : MonoBehaviour
 
     public void OneOneSelect()
     {
-        SceneManager.LoadScene("Concept Level 1");
+        SceneManager.LoadScene("MASTER");
     }
 
     public void OneTwoSelect()
     {
-        SceneManager.LoadScene("Level 1-2");
+        SceneManager.LoadScene("MASTER Level 2");
     }
 
     public void OneThreeSelect()

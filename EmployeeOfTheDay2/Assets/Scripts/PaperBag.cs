@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class PaperBag : MonoBehaviour
 {
+    //Random customer selection
+    public GameObject[] shopperPrefab;
+
+
 
     public GameObject shopper;
     public GameObject entrance;
@@ -58,7 +62,7 @@ public class PaperBag : MonoBehaviour
 
         entrance = GameObject.FindGameObjectWithTag("Entrance");
         audioClip = gameObject.GetComponent<AudioSource>();
-        currentShopper = Instantiate(shopper, entrance.transform.position, entrance.transform.rotation);
+        currentShopper = Instantiate(shopperPrefab[npcIndex], entrance.transform.position, entrance.transform.rotation);
 
         MyList();
         FindProducts();
@@ -97,7 +101,7 @@ public class PaperBag : MonoBehaviour
             else if (other.transform.IsChildOf(player2.transform))
             {
                 Debug.Log("Player 1 ++");
-                ScoreManagerPlayer.currentScoreP2 += 1;                             
+                ScoreManagerPlayer.currentScoreP2 += 1;
             }
             else if (other.transform.IsChildOf(player3.transform))
             {
@@ -111,8 +115,8 @@ public class PaperBag : MonoBehaviour
 
                 ScoreManagerPlayer.currentScoreP4 += 1;
             }
-            
-            Destroy(other.gameObject);//Destory item           
+
+            Destroy(other.gameObject);//Destory item
 
             if (itemsInBag >= shoppingList)//Shopping list full
             {
