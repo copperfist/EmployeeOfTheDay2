@@ -41,7 +41,6 @@ public class SpawnPaperBag : MonoBehaviour
 
     public IEnumerator SpawnNewBag()
     {
-        //Debug.Log("Making a new bag");
         Destroy(paperBagClone);
         yield return new WaitForSeconds(2);
         SpawnBag();

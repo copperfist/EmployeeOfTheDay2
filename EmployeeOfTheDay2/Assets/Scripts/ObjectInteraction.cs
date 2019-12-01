@@ -15,6 +15,7 @@ public class ObjectInteraction : MonoBehaviour
 
     public bool canHold = false;
 
+
     private void Update()
     {
         PlayerAnimation();
@@ -84,7 +85,7 @@ public class ObjectInteraction : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Banana" || other.tag == "Bread" || other.tag == "Ham" || other.tag == "Onion" || other.tag == "Tomato" || other.tag == "Soup")
+        if (other.CompareTag("Banana") || other.CompareTag("Bread") || other.CompareTag("Ham") || other.CompareTag("Onion") || other.CompareTag("Tomato") || other.CompareTag("Soup"))
         {
             item = other.gameObject;
             canHold = true;
@@ -93,7 +94,7 @@ public class ObjectInteraction : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Banana" || other.tag == "Bread" || other.tag == "Ham" || other.tag == "Onion" || other.tag == "Tomato" || other.tag == "Soup")
+        if (other.CompareTag("Banana") || other.CompareTag("Bread") || other.CompareTag("Ham") || other.CompareTag("Onion") || other.CompareTag("Tomato") || other.CompareTag("Soup"))
         {
             canHold = false;
         }

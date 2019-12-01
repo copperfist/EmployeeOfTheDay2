@@ -15,11 +15,6 @@ public class GameManager : MonoBehaviour
 
     public bool GameOver2 = false;
 
-    void Start()
-    {
-
-    }
-
     private void Update()
     {
         if (GameOver2 == true)
@@ -33,11 +28,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     public IEnumerator EndGame()
     {
-
-
         Time.timeScale = 0f;
         TimesUpUI.SetActive(true);
         //AudioListener.pause = true;
@@ -47,12 +39,7 @@ public class GameManager : MonoBehaviour
         GameOver2 = true;
         TimesUpUI.SetActive(false);
         GameOverUI.SetActive(true);
-
-
-
-        
-
-
+        ScoreManagerPlayer.EOTD();
     }
 
     public void EndGame2()
@@ -62,7 +49,7 @@ public class GameManager : MonoBehaviour
     public void Replay()
     {
         Time.timeScale = 1f;
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("MASTER");
     }
     public void LoadMenu()
     {

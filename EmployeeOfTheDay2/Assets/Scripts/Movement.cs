@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
     public float movementSpeed = 5.0f;
     public Animator playerAnimator;
     public GameObject runDust;
@@ -82,11 +81,6 @@ public class Movement : MonoBehaviour
         else
         {
             rb.velocity = Vector3.zero;
-        }
-
- 
+        } 
     }
-
-
-
 }

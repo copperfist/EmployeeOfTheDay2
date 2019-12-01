@@ -37,8 +37,18 @@ public class PaperBag : MonoBehaviour
 
     public bool uiUpdate = false;
 
+    public GameObject player1;
+    public GameObject player2;
+    public GameObject player3;
+    public GameObject player4;
+
     private void Start()
     {
+        player1 = GameObject.Find("Player 1");
+        player2 = GameObject.Find("Player 2");
+        player3 = GameObject.Find("Player 3");
+        player4 = GameObject.Find("Player 4");
+
         banana = GameObject.Find("Banana_UI");
         bread = GameObject.Find("Bread_UI");
         ham = GameObject.Find("Ham_UI");
@@ -52,7 +62,6 @@ public class PaperBag : MonoBehaviour
 
         MyList();
         FindProducts();
-
     }
 
 
@@ -79,6 +88,30 @@ public class PaperBag : MonoBehaviour
             audioClip.Play();
             paperBagAnimator.SetTrigger("BagAnim");
 
+            //Adds individual score
+            if (other.transform.IsChildOf(player1.transform))
+            {
+                Debug.Log("Player 1 ++");
+                ScoreManagerPlayer.currentScoreP1 += 1;
+            }
+            else if (other.transform.IsChildOf(player2.transform))
+            {
+                Debug.Log("Player 1 ++");
+                ScoreManagerPlayer.currentScoreP2 += 1;                             
+            }
+            else if (other.transform.IsChildOf(player3.transform))
+            {
+                Debug.Log("Player 3 ++");
+
+                ScoreManagerPlayer.currentScoreP3 += 1;
+            }
+            else if (other.transform.IsChildOf(player4.transform))
+            {
+                Debug.Log("Player 4 ++");
+
+                ScoreManagerPlayer.currentScoreP4 += 1;
+            }
+            
             Destroy(other.gameObject);//Destory item           
 
             if (itemsInBag >= shoppingList)//Shopping list full
@@ -190,4 +223,14 @@ public class PaperBag : MonoBehaviour
             uiUpdate = false;
         }
     }
+
+    //private void Update()
+    //{
+    //    if (Input.GetKey(KeyCode.Space))
+    //    {
+
+    //        Debug.Log("AddingScore");
+    //        ScoreManagerPlayer.currentScoreP1 += 1;
+    //    }
+    //}
 }
