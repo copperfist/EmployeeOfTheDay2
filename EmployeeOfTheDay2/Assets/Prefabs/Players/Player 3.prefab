@@ -4753,33 +4753,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!95 &8043091746042456185
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9073361198251711544}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a2743e6677f997a4ea5e4726e68b6de9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed by
-    Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
-    'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform 'Character1_Ctrl_RightArm'\n\tTransform
-    'Character1_Ctrl_LeftLeg'\n\tTransform 'Character1_Ctrl_LeftFoot'\n\tTransform
-    'Character1_Ctrl_RightHand'\n\tTransform 'Character1_Ctrl_RightUpLeg'\n\tTransform
-    'Character1_Ctrl_RightForeArm'\n\tand more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom
-    animation clip 'Anim_Run'\n\tFrom animation clip 'Anim_IdleHold'\n\tFrom animation
-    clip 'Anim_RunHold'\n\tFrom animation clip 'Anim_Lever'"
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4262678292339608376
 GameObject:
   m_ObjectHideFlags: 0
@@ -9558,7 +9531,7 @@ Transform:
   m_GameObject: {fileID: 5540926781865337209}
   m_LocalRotation: {x: 0.000000010339578, y: 0.000000008267671, z: -0.000000059604638,
     w: 1}
-  m_LocalPosition: {x: -0.001, y: 0.008, z: 0.839}
+  m_LocalPosition: {x: -0.01, y: 0.008, z: 0.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5540926781975747053}
@@ -9597,7 +9570,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5540926781975747056}
-  m_LocalRotation: {x: -0, y: 0.9994569, z: -0, w: 0.032954518}
+  m_LocalRotation: {x: 0, y: 0.9994569, z: 0, w: 0.03295458}
   m_LocalPosition: {x: -9.013774, y: 2.001, z: -15.232035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14448,10 +14421,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ab9bc646137f8994588039b000cfdd67, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -14554,6 +14527,33 @@ MonoBehaviour:
   leverAction: 0
   sweat: {fileID: 4262678292339608373}
   canHold: 0
+--- !u!95 &8043091746042456185
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9073361198251711544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a2743e6677f997a4ea5e4726e68b6de9, type: 3}
+  m_Controller: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed by
+    Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
+    'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform 'Character1_Ctrl_RightArm'\n\tTransform
+    'Character1_Ctrl_LeftLeg'\n\tTransform 'Character1_Ctrl_LeftFoot'\n\tTransform
+    'Character1_Ctrl_RightHand'\n\tTransform 'Character1_Ctrl_RightUpLeg'\n\tTransform
+    'Character1_Ctrl_RightForeArm'\n\tand more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom
+    animation clip 'Anim_Run'\n\tFrom animation clip 'Anim_IdleHold'\n\tFrom animation
+    clip 'Anim_RunHold'\n\tFrom animation clip 'Anim_Lever'"
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1065911624202994993
 PrefabInstance:
   m_ObjectHideFlags: 0

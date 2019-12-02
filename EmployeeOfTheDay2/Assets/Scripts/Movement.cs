@@ -30,6 +30,7 @@ public class Movement : MonoBehaviour
     {
         PlayerMovement();
         PlayerAnimation();
+
     }
 
     void PlayerAnimation()
@@ -40,11 +41,12 @@ public class Movement : MonoBehaviour
         {
             playerAnimator.SetBool("Moving", false);
             dust.Play();
-            runSound.Play();
+            runSound.volume = 0;
         }
         else
         {
             playerAnimator.SetBool("Moving", true);
+            runSound.volume = 0.7f;
         }
 
         if (isAPressed == true)
@@ -82,4 +84,5 @@ public class Movement : MonoBehaviour
             rb.velocity = Vector3.zero;
         } 
     }
+
 }

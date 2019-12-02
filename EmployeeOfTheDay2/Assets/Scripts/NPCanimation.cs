@@ -6,7 +6,7 @@ public class NPCanimation : MonoBehaviour
 {
 
     public Animator npcAnimator;
-    public bool Walking = false;
+    public bool Walking = true;
 
 
     private void OnTriggerStay(Collider other)
@@ -14,17 +14,23 @@ public class NPCanimation : MonoBehaviour
         if (other.tag == "npcIdleBox")
         {
             npcAnimator.SetBool("Walking", false);
-        }
-
-        else
-        {
-            npcAnimator.SetBool("Walking", true);
-
+            Walking = false;
         }
 
         if (other.tag == "npcKillBox")
         {
             Destroy(gameObject);
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+
+        if (other.tag == "npcIdleBox")
+        {
+            npcAnimator.SetBool("Walking", true);
+            Walking = true;
         }
 
     }
