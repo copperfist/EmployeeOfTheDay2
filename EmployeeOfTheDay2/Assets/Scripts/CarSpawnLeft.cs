@@ -18,7 +18,7 @@ public class CarSpawnLeft : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             whatToSpawn = Random.Range(1, 4);
-            Debug.Log(whatToSpawn);
+            //Debug.Log(whatToSpawn);
 
             switch (whatToSpawn)
             {
