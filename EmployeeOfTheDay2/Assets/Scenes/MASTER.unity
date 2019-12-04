@@ -9174,6 +9174,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1168165535}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1175086607 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1980493124831178233, guid: ef4036326f8a7bf4792fee93fea6b523,
+    type: 3}
+  m_PrefabInstance: {fileID: 1980493126004902902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1196840514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4410214710984048855, guid: 02ac08dae24d4e146ad4551e436d9512,
@@ -17644,6 +17650,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1765291891379506819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1980493126004902902
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1980493124831178232, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_Name
+      value: Tanoy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4036326f8a7bf4792fee93fea6b523, type: 3}
 --- !u!1001 &2189590041247173096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20814,6 +20889,7 @@ MonoBehaviour:
   audioHolderP2: {fileID: 123}
   audioHolderP3: {fileID: 27}
   audioHolderP4: {fileID: 1012728997}
+  Tanoy: {fileID: 1175086607}
 --- !u!114 &6414840035762555499
 MonoBehaviour:
   m_ObjectHideFlags: 0

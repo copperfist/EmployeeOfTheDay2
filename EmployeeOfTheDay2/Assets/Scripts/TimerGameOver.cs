@@ -13,6 +13,8 @@ public class TimerGameOver : GameManager
     public AudioSource audioHolderP3;
     public AudioSource audioHolderP4;
 
+    public AudioSource Tanoy;
+
     void Start()
     {
         countDownTimer();              
@@ -20,6 +22,10 @@ public class TimerGameOver : GameManager
     
     public void countDownTimer()
     {
+        if (countDownStartValue == 37)
+        {
+            Tanoy.Play();
+        }
         if (countDownStartValue > 0)
         {
             TimeSpan spanTime = TimeSpan.FromSeconds(countDownStartValue); 
