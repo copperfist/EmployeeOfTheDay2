@@ -79,7 +79,7 @@ public class ScoreManagerPlayer : MonoBehaviour
         {
             UpdateImage();
         }
-        Debug.Log(mikePic);
+        //Debug.Log(mikePic);
     }
 
     public void UpdateImage()
