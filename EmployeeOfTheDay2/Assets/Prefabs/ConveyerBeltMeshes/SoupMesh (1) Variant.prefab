@@ -41,12 +41,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   speed: 2
-  waypointDistance: 0.2
+  waypoint1: {fileID: 0}
+  waypoint2: {fileID: 0}
+  waypoint3: {fileID: 0}
+  targetVector: {x: 0, y: 0, z: 0}
+  newSpawn: 1
+  onConveyor: 0
+--- !u!114 &5098380582688941315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4418695050384580021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4cf716d4795a544919e8d6b2061828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  waypoint4: {fileID: 0}
+  waypoint5: {fileID: 0}
+  waypoint6: {fileID: 0}
+  targetVector: {x: 0, y: 0, z: 0}
+  newSpawn: 1
+  onConveyor: 0
 --- !u!1001 &5653062802281874620
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -29,6 +29,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.77215004, y: 0.9281491, z: 1.051222}
   m_Center: {x: 0, y: 0.01305704, z: 0}
+--- !u!114 &-1685912530039330893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987116898740808470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4cf716d4795a544919e8d6b2061828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  waypoint4: {fileID: 0}
+  waypoint5: {fileID: 0}
+  waypoint6: {fileID: 0}
+  targetVector: {x: 0, y: 0, z: 0}
+  newSpawn: 1
+  onConveyor: 0
 --- !u!114 &4492513232131376537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,12 +60,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a339410188338b4aabf33b4e40bfa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target:
-  - {fileID: 4754436151659986774, guid: 7aa4164a480a5aa4ab4711c2e1f7e1be, type: 3}
-  - {fileID: 1868003817498013006, guid: a13eeb1f44c06224ea5a888ee8a187fb, type: 3}
-  - {fileID: 6293534086806428458, guid: f989e6762f27e2f46b3118babcc0ad0f, type: 3}
   speed: 2
-  waypointDistance: 0.2
+  waypoint1: {fileID: 0}
+  waypoint2: {fileID: 0}
+  waypoint3: {fileID: 0}
+  targetVector: {x: 0, y: 0, z: 0}
+  newSpawn: 1
+  onConveyor: 0
 --- !u!1001 &2321445144779321887
 PrefabInstance:
   m_ObjectHideFlags: 0
