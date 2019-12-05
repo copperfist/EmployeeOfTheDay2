@@ -11358,6 +11358,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PaperBagHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: MinDistance
+      value: 49.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 504.51
+      objectReference: {fileID: 0}
     - target: {fileID: 6258186491042744024, guid: 218ff05e06c1a96498095061862de36f,
         type: 3}
       propertyPath: m_LocalPosition.x
