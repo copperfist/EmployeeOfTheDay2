@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public GameObject respawnPoint;
     public float movementSpeed = 5.0f;
     public Animator playerAnimator;
     public GameObject runDust;
@@ -83,6 +84,32 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         } 
+    }
+
+    //death mechanics
+
+    public void Die()
+    {
+        StopCoroutine(DieRespawn());
+        playerAnimator.enabled = false;
+        StartCoroutine(DieRespawn());
+        movementSpeed = 0;
+    }
+
+    public void Alive()
+    {
+        playerAnimator.enabled = true;
+        transform.position = respawnPoint.transform.position;
+        StopCoroutine(DieRespawn());
+        movementSpeed = 5;
+    }
+
+    IEnumerator DieRespawn()
+    {
+        yield return new WaitForSeconds(5f);
+        Alive();
+        StopCoroutine(DieRespawn());
+
     }
 
 }

@@ -4868,6 +4868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9926118b5280241ba306d5c11430da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
   movementSpeed: 5
   playerAnimator: {fileID: 8910523764024853461}
   runDust: {fileID: 4187755901715513517}
@@ -14553,11 +14554,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2852324439406542898}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_Name
-      value: BigMikeRun
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14612,6 +14608,40 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed by
+        Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
+        'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform
+        'Character1_Ctrl_RightArm'\n\tTransform 'Character1_Ctrl_LeftLeg'\n\tTransform
+        'Character1_Ctrl_LeftFoot'\n\tTransform 'Character1_Ctrl_RightHand'\n\tTransform
+        'Character1_Ctrl_RightUpLeg'\n\tTransform 'Character1_Ctrl_RightForeArm'\n\tand
+        more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom animation clip 'Anim_Run'\n\tFrom
+        animation clip 'Anim_IdleHold'\n\tFrom animation clip 'Anim_RunHold'\n\tFrom
+        animation clip 'Anim_Lever'"
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_Name
+      value: BigMikeRun
       objectReference: {fileID: 0}
     - target: {fileID: -3008245600915623372, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
@@ -15323,30 +15353,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.18360998
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5e5b65f9996578b409db8e8cd53c186e, type: 2}
-    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed by
-        Humanoid clips.\n\tTransform 'Character1_Ctrl_Hips'\n\tTransform 'Character1_Ctrl_LeftForeArm'\n\tTransform
-        'Character1_Ctrl_Neck'\n\tTransform 'Character1_Ctrl_Spine1'\n\tTransform
-        'Character1_Ctrl_RightArm'\n\tTransform 'Character1_Ctrl_LeftLeg'\n\tTransform
-        'Character1_Ctrl_LeftFoot'\n\tTransform 'Character1_Ctrl_RightHand'\n\tTransform
-        'Character1_Ctrl_RightUpLeg'\n\tTransform 'Character1_Ctrl_RightForeArm'\n\tand
-        more ...\n\tFrom animation clip 'Anim_Idle'\n\tFrom animation clip 'Anim_Run'\n\tFrom
-        animation clip 'Anim_IdleHold'\n\tFrom animation clip 'Anim_RunHold'\n\tFrom
-        animation clip 'Anim_Lever'"
-      objectReference: {fileID: 0}
     - target: {fileID: 3172746709605023933, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -15611,6 +15617,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.00010078957
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0028381601
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.035974547
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0007996659
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9993484
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000000106871
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1753866
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000000019171514
       objectReference: {fileID: 0}
     - target: {fileID: -1588354935083145021, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}
@@ -16121,41 +16162,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.21651524
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0028381601
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.035974547
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0007996659
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9993484
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000106871
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1753866
-      objectReference: {fileID: 0}
-    - target: {fileID: -1688599064700427433, guid: a2743e6677f997a4ea5e4726e68b6de9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000000019171514
       objectReference: {fileID: 0}
     - target: {fileID: 4233715987631240302, guid: a2743e6677f997a4ea5e4726e68b6de9,
         type: 3}

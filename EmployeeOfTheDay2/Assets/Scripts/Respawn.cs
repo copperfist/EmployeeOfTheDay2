@@ -8,9 +8,21 @@ public class Respawn : MonoBehaviour
 
     [SerializeField] private Transform respawnPoint;
 
+    private void FixedUpdate()
+    {
+        
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("hit");
-        player.transform.position = respawnPoint.transform.position;
+
+        player = collision.gameObject;
+
+        player.GetComponent<Movement>().Die();
+
+
     }
+
+
+
 }
