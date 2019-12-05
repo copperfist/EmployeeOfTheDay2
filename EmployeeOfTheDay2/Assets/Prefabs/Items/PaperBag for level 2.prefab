@@ -107,7 +107,7 @@ BoxCollider:
   m_GameObject: {fileID: 3657630433672124085}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.7426176, y: 1.8001026, z: 2.4142485}
   m_Center: {x: -0.07219744, y: -0.47431594, z: 0.010253429}
@@ -128,6 +128,7 @@ MonoBehaviour:
   - {fileID: 8632627387863571552, guid: 7e6439c5f9123d7438f0ea5553c50ac9, type: 3}
   - {fileID: 8632627387863571552, guid: 0e142cf51bc43824ba41ad57c1a713a6, type: 3}
   - {fileID: 8632627387863571552, guid: 849a096c4f615004b937a05f5f939ad7, type: 3}
+  triggerEnabling: {fileID: 499146712766390674}
   shopper: {fileID: 8632627387863571552, guid: 9561304d99bc59347adec500c6da07f6, type: 3}
   entrance: {fileID: 0}
   currentShopper: {fileID: 0}

@@ -8,6 +8,8 @@ public class PaperBag : MonoBehaviour
     //Random customer selection
     public GameObject[] shopperPrefab;
 
+    public BoxCollider triggerEnabling;                                   
+
 
 
     public GameObject shopper;
@@ -68,6 +70,7 @@ public class PaperBag : MonoBehaviour
 
         MyList();
         FindProducts();
+        triggerEnabling.enabled = true;
     }
 
 

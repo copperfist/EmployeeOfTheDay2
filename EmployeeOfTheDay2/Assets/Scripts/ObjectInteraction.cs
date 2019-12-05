@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectInteraction : MonoBehaviour
 {
     public Transform guide;
-    public GameObject item;
+    public GameObject item = null;
     public float throwForce = 10.0f;
     public Animator playerAnimator;
     public string interactCtrl = "Interact_P1";
@@ -27,16 +27,19 @@ public class ObjectInteraction : MonoBehaviour
             item.transform.position = guide.transform.position;
             item.transform.rotation = guide.transform.rotation;
             item.transform.parent = transform;
+            canHold = false;
         }
 
         else if (Input.GetButtonUp(interactCtrl) && canHold == true)
         {
-            item.GetComponent<Rigidbody>().useGravity = true;
-            item.GetComponent<Rigidbody>().isKinematic = false;
-            item.transform.parent = null;
-            item.transform.position = guide.transform.position;
-            item = null;
+            DropObject();
         }
+
+        else if (gameObject.GetComponent<Death>().isHit == true)
+        {
+            DropObject();
+        }
+
 
         else if (Input.GetButtonDown(interactCtrl) && leverReady == true)
         {
@@ -68,6 +71,16 @@ public class ObjectInteraction : MonoBehaviour
             item = null;
         }*/
 
+    }
+
+    public void DropObject()
+    {
+        item.GetComponent<Rigidbody>().useGravity = true;
+        item.GetComponent<Rigidbody>().isKinematic = false;
+        item.transform.parent = null;
+        item.transform.position = guide.transform.position;
+        item = null;
+        canHold = true;
     }
 
     void PlayerAnimation()//Pick u anim

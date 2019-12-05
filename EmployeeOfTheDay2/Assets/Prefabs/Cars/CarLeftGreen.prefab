@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -6754130821481892962}
   - component: {fileID: -254644535559925064}
   - component: {fileID: -8364085167082773534}
+  - component: {fileID: 8308452512269659318}
   m_Layer: 0
   m_Name: CarLeftGreen
   m_TagString: Car
@@ -340,9 +341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3462a80e6ead2b644ba83d5037a46d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2852324439406542895, guid: 6cc76830052fad24db1f4412e63adc98, type: 3}
-  respawnPoint: {fileID: 4847615135564723705, guid: 64ae8f2b9beca81479ba86e4938446bb,
-    type: 3}
+  player1: {fileID: 2852324439406542895, guid: 6cc76830052fad24db1f4412e63adc98, type: 3}
+  player2: {fileID: 3114204484074140170, guid: 4a0d5cb3cda08e145813388acd2e7350, type: 3}
+  player3: {fileID: 5540926781975747056, guid: a26e3bb36b577d34890a0cfca9f76668, type: 3}
+  player4: {fileID: 4001722108244547104, guid: 87e9e64f29b89214b8fadd9034aac393, type: 3}
 --- !u!65 &-254644535559925064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -350,7 +352,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5528182288307834623}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: deed57c7410edd147b9ff50e262dbd85, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -367,17 +369,17 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1b3d33ae66a578b4489620bf872e58cd, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1
-  Loop: 0
+  m_PlayOnAwake: 1
+  m_Volume: 0.345
+  m_Pitch: 0.78
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -452,6 +454,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &8308452512269659318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528182288307834623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.049576, y: 1.2794418, z: 2.1189532}
+  m_Center: {x: 1.8302526, y: 0.6475897, z: 0.8715793}
 --- !u!1001 &6177097610050720694
 PrefabInstance:
   m_ObjectHideFlags: 0

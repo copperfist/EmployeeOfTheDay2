@@ -21,7 +21,7 @@ public class SpawnPaperBag : MonoBehaviour
     }
     
 
-    public void Update()
+    public void FixedUpdate()
     {
         makeNewBag = PaperBag.BagIsFull;
         if (makeNewBag == true)

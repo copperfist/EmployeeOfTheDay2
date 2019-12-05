@@ -86,30 +86,4 @@ public class Movement : MonoBehaviour
         } 
     }
 
-    //death mechanics
-
-    public void Die()
-    {
-        StopCoroutine(DieRespawn());
-        playerAnimator.enabled = false;
-        StartCoroutine(DieRespawn());
-        movementSpeed = 0;
-    }
-
-    public void Alive()
-    {
-        playerAnimator.enabled = true;
-        transform.position = respawnPoint.transform.position;
-        StopCoroutine(DieRespawn());
-        movementSpeed = 5;
-    }
-
-    IEnumerator DieRespawn()
-    {
-        yield return new WaitForSeconds(5f);
-        Alive();
-        StopCoroutine(DieRespawn());
-
-    }
-
 }
