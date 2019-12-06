@@ -43,7 +43,7 @@ public class ScoreManagerPlayer : MonoBehaviour
     public static void EOTD()
     {
         gameOver = true;
-     highestPlayer = Mathf.Max(currentScoreP1, currentScoreP2, currentScoreP3, currentScoreP4);
+        highestPlayer = Mathf.Max(currentScoreP1, currentScoreP2, currentScoreP3, currentScoreP4);
 
         if (highestPlayer == currentScoreP1)
         {
@@ -75,7 +75,7 @@ public class ScoreManagerPlayer : MonoBehaviour
 
     private void Update()
     {
-        if(gameOver == true)
+        if (gameOver == true)
         {
             UpdateImage();
         }
@@ -98,14 +98,14 @@ public class ScoreManagerPlayer : MonoBehaviour
             sharkPic.SetActive(false);
             bunnyPic.SetActive(false);
         }
-        else if(p3Win == true)
+        else if (p3Win == true)
         {
             mikePic.SetActive(false);
             monkeyPic.SetActive(false);
             sharkPic.SetActive(true);
             bunnyPic.SetActive(false);
         }
-        else if(p4Win == true)
+        else if (p4Win == true)
         {
             mikePic.SetActive(false);
             monkeyPic.SetActive(false);

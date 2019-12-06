@@ -13,6 +13,13 @@ public class GameManager : MonoBehaviour
     public TimerGameOver GameObject;
     public string interactCtrl = "Interact_P1";
 
+    public GameObject starImage1;
+    public GameObject starImage2;
+    public GameObject starImage3;
+    public GameObject starImage4;
+    public GameObject starImage5;
+
+
     public bool GameOver2 = false;
 
     private void Update()
@@ -39,6 +46,54 @@ public class GameManager : MonoBehaviour
         GameOver2 = true;
         TimesUpUI.SetActive(false);
         GameOverUI.SetActive(true);
+
+        if (ScoreManager.score >= 10 && ScoreManager.score <= 40)
+        {
+            //1 star
+            starImage1.SetActive(true);
+            starImage2.SetActive(false);
+            starImage3.SetActive(false);
+            starImage4.SetActive(false);
+            starImage5.SetActive(false);
+
+        }
+        else if (ScoreManager.score >= 50 && ScoreManager.score <= 70)
+        {
+            //2 star
+            starImage1.SetActive(true);
+            starImage2.SetActive(true);
+            starImage3.SetActive(false);
+            starImage4.SetActive(false);
+            starImage5.SetActive(false);
+        }
+        else if (ScoreManager.score >= 80 && ScoreManager.score <= 100)
+        {
+            //3 star
+            starImage1.SetActive(true);
+            starImage2.SetActive(true);
+            starImage3.SetActive(true);
+            starImage4.SetActive(false);
+            starImage5.SetActive(false);
+        }
+        else if (ScoreManager.score >= 110 && ScoreManager.score <= 140)
+        {
+            //4 star
+            starImage1.SetActive(true);
+            starImage2.SetActive(true);
+            starImage3.SetActive(true);
+            starImage4.SetActive(true);
+            starImage5.SetActive(false);
+        }
+        else if (ScoreManager.score >= 150)
+        {
+            //5 star
+            starImage1.SetActive(true);
+            starImage2.SetActive(true);
+            starImage3.SetActive(true);
+            starImage4.SetActive(true);
+            starImage5.SetActive(true);
+        }
+
         ScoreManagerPlayer.EOTD();
     }
 
