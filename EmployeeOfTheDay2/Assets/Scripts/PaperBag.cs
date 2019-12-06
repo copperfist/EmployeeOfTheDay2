@@ -127,7 +127,7 @@ public class PaperBag : MonoBehaviour
             {
                 itemsInBag = 0;
                 Debug.Log("Shopping Bag Full");
-                currentShopper.GetComponent<Animator>().SetBool("Leave", true);
+               // currentShopper.GetComponent<Animator>().SetBool("Leave", true);
                 CheckPaperBag();
             }
             else
@@ -242,4 +242,9 @@ public class PaperBag : MonoBehaviour
     //        ScoreManagerPlayer.currentScoreP1 += 1;
     //    }
     //}
+
+    public void CustomerLeave()
+    {
+        currentShopper.GetComponent<Animator>().SetBool("Leave", true);
+    }
 }

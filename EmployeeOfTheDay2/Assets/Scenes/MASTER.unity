@@ -1841,7 +1841,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe245a77984fc444b92834ce3b840959, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1885,7 +1885,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.751
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1937,7 +1937,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 45936a6721be7ce43bb7e8d61d93d5f8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1981,7 +1981,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.751
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6733,6 +6733,31 @@ PrefabInstance:
       propertyPath: GameOverUI2
       value: 
       objectReference: {fileID: 25435301}
+    - target: {fileID: 2608410082067275259, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: starImage1
+      value: 
+      objectReference: {fileID: 1346073406}
+    - target: {fileID: 2608410082067275259, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: starImage2
+      value: 
+      objectReference: {fileID: 1443103132}
+    - target: {fileID: 2608410082067275259, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: starImage3
+      value: 
+      objectReference: {fileID: 1783758093}
+    - target: {fileID: 2608410082067275259, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: starImage4
+      value: 
+      objectReference: {fileID: 1225348317}
+    - target: {fileID: 2608410082067275259, guid: a9cb09f48ffcc68438446c9508130569,
+        type: 3}
+      propertyPath: starImage5
+      value: 
+      objectReference: {fileID: 1843978483}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9cb09f48ffcc68438446c9508130569, type: 3}
 --- !u!1 &803895794
@@ -17741,6 +17766,11 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 1765291891693046910, guid: 012e92d359858a24b9ae04ece298d35e,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.757
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 012e92d359858a24b9ae04ece298d35e, type: 3}
 --- !u!1 &1765291891379506820 stripped
@@ -17795,6 +17825,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tanoy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178233, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980493124831178233, guid: ef4036326f8a7bf4792fee93fea6b523,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.724
       objectReference: {fileID: 0}
     - target: {fileID: 1980493124831178214, guid: ef4036326f8a7bf4792fee93fea6b523,
         type: 3}
@@ -21061,6 +21101,11 @@ MonoBehaviour:
   GameOverUI2: {fileID: 25435301}
   GameObject: {fileID: 6414840035762555498}
   interactCtrl: Interact_P1
+  starImage1: {fileID: 1346073406}
+  starImage2: {fileID: 1443103132}
+  starImage3: {fileID: 1783758093}
+  starImage4: {fileID: 1225348317}
+  starImage5: {fileID: 1843978483}
   GameOver2: 0
   countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}

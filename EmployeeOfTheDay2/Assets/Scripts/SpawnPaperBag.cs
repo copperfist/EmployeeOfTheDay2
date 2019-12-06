@@ -41,6 +41,7 @@ public class SpawnPaperBag : MonoBehaviour
 
     public IEnumerator SpawnNewBag()
     {
+        paperBagClone.GetComponent<PaperBag>().CustomerLeave();
         Destroy(paperBagClone);
         yield return new WaitForSeconds(2);
         SpawnBag();

@@ -1965,7 +1965,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 45936a6721be7ce43bb7e8d61d93d5f8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2009,7 +2009,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.672
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2061,7 +2061,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe245a77984fc444b92834ce3b840959, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2105,7 +2105,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.644
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2375,6 +2375,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471325426}
     m_Modifications:
+    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
+        type: 3}
+      propertyPath: m_Name
+      value: SoupMesh (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 795169439328104358, guid: 5f5ee39090fb64e4e80a240276ef0a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2439,11 +2444,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.91757023
-      objectReference: {fileID: 0}
-    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
-        type: 3}
-      propertyPath: m_Name
-      value: SoupMesh (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5ee39090fb64e4e80a240276ef0a04, type: 3}
@@ -6058,16 +6058,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5644442911598869659, guid: b70683c2ee7676945819eecd295d3f67,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644442911598869659, guid: b70683c2ee7676945819eecd295d3f67,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.405
-      objectReference: {fileID: 0}
     - target: {fileID: 5644442911598869728, guid: b70683c2ee7676945819eecd295d3f67,
         type: 3}
       propertyPath: m_Enabled
@@ -6077,6 +6067,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644442911598869659, guid: b70683c2ee7676945819eecd295d3f67,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644442911598869659, guid: b70683c2ee7676945819eecd295d3f67,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.405
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b70683c2ee7676945819eecd295d3f67, type: 3}
@@ -9458,6 +9458,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471325426}
     m_Modifications:
+    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
+        type: 3}
+      propertyPath: m_Name
+      value: SoupMesh (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 795169439328104358, guid: 5f5ee39090fb64e4e80a240276ef0a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9527,11 +9532,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9175702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
-        type: 3}
-      propertyPath: m_Name
-      value: SoupMesh (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5ee39090fb64e4e80a240276ef0a04, type: 3}
@@ -9957,6 +9957,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471325426}
     m_Modifications:
+    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
+        type: 3}
+      propertyPath: m_Name
+      value: SoupMesh (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 795169439328104358, guid: 5f5ee39090fb64e4e80a240276ef0a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10021,11 +10026,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9175706
-      objectReference: {fileID: 0}
-    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
-        type: 3}
-      propertyPath: m_Name
-      value: SoupMesh (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5ee39090fb64e4e80a240276ef0a04, type: 3}
@@ -10475,7 +10475,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe245a77984fc444b92834ce3b840959, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10519,7 +10519,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.689
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10571,7 +10571,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 45936a6721be7ce43bb7e8d61d93d5f8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10615,7 +10615,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.695
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10988,6 +10988,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471325426}
     m_Modifications:
+    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
+        type: 3}
+      propertyPath: m_Name
+      value: SoupMesh (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 795169439328104358, guid: 5f5ee39090fb64e4e80a240276ef0a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11052,11 +11057,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9175706
-      objectReference: {fileID: 0}
-    - target: {fileID: 4418695050384580021, guid: 5f5ee39090fb64e4e80a240276ef0a04,
-        type: 3}
-      propertyPath: m_Name
-      value: SoupMesh (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5ee39090fb64e4e80a240276ef0a04, type: 3}
@@ -11654,6 +11654,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7469705305712124442}
     m_Modifications:
+    - target: {fileID: 6258186491042744025, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: m_Name
+      value: PaperBagHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: MinDistance
+      value: 49.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 504.51
+      objectReference: {fileID: 0}
     - target: {fileID: 6258186491042744024, guid: 218ff05e06c1a96498095061862de36f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11709,11 +11729,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6258186491042744025, guid: 218ff05e06c1a96498095061862de36f,
-        type: 3}
-      propertyPath: m_Name
-      value: PaperBagHolder
-      objectReference: {fileID: 0}
     - target: {fileID: 6258186491042744031, guid: 218ff05e06c1a96498095061862de36f,
         type: 3}
       propertyPath: paperBag
@@ -11725,21 +11740,6 @@ PrefabInstance:
       propertyPath: cashSound
       value: 
       objectReference: {fileID: 729141584}
-    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
-        type: 3}
-      propertyPath: MinDistance
-      value: 49.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6258186491042744030, guid: 218ff05e06c1a96498095061862de36f,
-        type: 3}
-      propertyPath: MaxDistance
-      value: 504.51
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218ff05e06c1a96498095061862de36f, type: 3}
 --- !u!1001 &1059337269
@@ -15919,12 +15919,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: -2825483558437132120, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
+    - target: {fileID: -1504981713932161579, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1dbbc6872cd7aba48a66e63f3c4fbdc3, type: 2}
-    - target: {fileID: -1504981713932161579, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
+    - target: {fileID: -2825483558437132120, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17703,12 +17703,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2825483558437132120, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
+    - target: {fileID: -1504981713932161579, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1dbbc6872cd7aba48a66e63f3c4fbdc3, type: 2}
-    - target: {fileID: -1504981713932161579, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
+    - target: {fileID: -2825483558437132120, guid: f3aed85c2a25ffe4fa7954cc32a9b8a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -35489,7 +35489,7 @@ MonoBehaviour:
   starImage4: {fileID: 1225348317}
   starImage5: {fileID: 1843978483}
   GameOver2: 0
-  countDownStartValue: 100
+  countDownStartValue: 240
   timerUI: {fileID: 6414840035762555492}
   audioHolderP1: {fileID: 1420051855}
   audioHolderP2: {fileID: 301995183}
