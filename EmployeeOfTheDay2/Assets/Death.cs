@@ -9,12 +9,18 @@ public class Death : MonoBehaviour
 
     public GameObject respawnPoint;
 
+    public AudioSource carHonk;
+
     public void Die()
     {
         gameObject.GetComponent<Movement>().playerAnimator.enabled = false;
         gameObject.GetComponent<ObjectInteraction>().enabled = false;
         gameObject.GetComponent<Movement>().enabled = false;
         isHit = true;
+
+
+        carHonk.Play();
+        
 
         if (gameObject.GetComponent<ObjectInteraction>().canHold == false)
         {
