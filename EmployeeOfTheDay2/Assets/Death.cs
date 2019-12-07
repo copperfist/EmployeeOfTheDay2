@@ -24,7 +24,7 @@ public class Death : MonoBehaviour
 
         if (gameObject.GetComponent<ObjectInteraction>().canHold == false)
         {
-            gameObject.GetComponent<ObjectInteraction>().DropObject();
+            gameObject.GetComponent<ObjectInteraction>().isDead = true;
         }
     }
 

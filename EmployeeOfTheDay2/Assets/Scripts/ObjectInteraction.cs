@@ -15,6 +15,7 @@ public class ObjectInteraction : MonoBehaviour
 
     public bool canHold = false;
     public bool isHolding = false;
+    public bool isDead = false;
 
 
     private void Update()
@@ -38,7 +39,7 @@ public class ObjectInteraction : MonoBehaviour
             isHolding = false;
         }
 
-        else if (gameObject.GetComponent<Death>().isHit == true && isHolding == true)
+        else if (isDead == true && isHolding)
         {
             DropObject();
             isHolding = false;
