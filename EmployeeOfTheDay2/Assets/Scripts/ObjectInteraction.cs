@@ -14,6 +14,7 @@ public class ObjectInteraction : MonoBehaviour
     public ParticleSystem sweat;
 
     public bool canHold = false;
+    public bool isHolding = false;
 
 
     private void Update()
@@ -28,16 +29,19 @@ public class ObjectInteraction : MonoBehaviour
             item.transform.rotation = guide.transform.rotation;
             item.transform.parent = transform;
             canHold = false;
+            isHolding = true;
         }
 
         else if (Input.GetButtonUp(interactCtrl) && canHold == true)
         {
             DropObject();
+            isHolding = false;
         }
 
-        else if (gameObject.GetComponent<Death>().isHit == true)
+        else if (gameObject.GetComponent<Death>().isHit == true && isHolding == true)
         {
             DropObject();
+            isHolding = false;
         }
 
 
