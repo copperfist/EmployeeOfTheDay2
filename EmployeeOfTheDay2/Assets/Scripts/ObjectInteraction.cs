@@ -38,7 +38,7 @@ public class ObjectInteraction : MonoBehaviour
             isHolding = false;
         }
 
-        else if (gameObject.GetComponent<Death>().isHit == true && isHolding == false)
+        else if (gameObject.GetComponent<Death>().isHit == true && isHolding == true)
         {
             DropObject();
             isHolding = false;
