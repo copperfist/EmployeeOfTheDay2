@@ -49,8 +49,6 @@ MonoBehaviour:
   cashSound: {fileID: 0}
   moneySplash: {fileID: 8806562893208822645, guid: e793c7eac3fcbdf4ca2da41fa2d9e34a,
     type: 3}
-  coinSplash: {fileID: 8806562893208822645, guid: 650e6c142abd6764c97fcf31e54f26cb,
-    type: 3}
 --- !u!82 &6258186491042744030
 AudioSource:
   m_ObjectHideFlags: 0

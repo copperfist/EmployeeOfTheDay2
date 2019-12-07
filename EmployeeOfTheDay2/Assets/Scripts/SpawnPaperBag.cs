@@ -11,7 +11,6 @@ public class SpawnPaperBag : MonoBehaviour
 
     private bool makeNewBag = false;
     public GameObject moneySplash;
-    public GameObject coinSplash;
 
     public static int points = 0;
 
@@ -28,8 +27,7 @@ public class SpawnPaperBag : MonoBehaviour
         if (makeNewBag == true)
         {
             cashSound.Play();
-            Instantiate(moneySplash, transform);
-            Instantiate(coinSplash, transform);
+            Instantiate(moneySplash, transform);            
             ScoreManager.score += 10;
             StartCoroutine(SpawnNewBag());
             PaperBag.BagIsFull = false;
