@@ -13,7 +13,11 @@ public class PauseMenu : MonoBehaviour
     //public static PauseMenu instance;
 
     public string pauseCtrl;
-    
+
+    private void Awake()
+    {
+        AudioListener.pause = false;
+    }
 
     public void Update()
     {
@@ -55,6 +59,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        AudioListener.pause = false;
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
     }
