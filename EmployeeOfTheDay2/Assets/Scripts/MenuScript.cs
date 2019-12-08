@@ -12,6 +12,7 @@ public class MenuScript : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("MASTER");
+        Time.timeScale = 1f;
     }
 
     public void LevelSelect()
@@ -34,6 +35,7 @@ public class MenuScript : MonoBehaviour
     public void OneOneSelect()
     {
         SceneManager.LoadScene("MASTER");
+        Time.timeScale = 0f;
     }
 
     public void OneTwoSelect()
