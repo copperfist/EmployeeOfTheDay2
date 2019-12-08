@@ -47,7 +47,7 @@ public class Movement : MonoBehaviour
         else
         {
             playerAnimator.SetBool("Moving", true);
-            runSound.volume = 0.7f;
+            runSound.volume = 0.4f;
         }
 
         if (isAPressed == true)
