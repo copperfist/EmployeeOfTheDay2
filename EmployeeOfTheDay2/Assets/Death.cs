@@ -30,6 +30,7 @@ public class Death : MonoBehaviour
 
     public void Alive()
     {
+        gameObject.GetComponent<ObjectInteraction>().isDead = false;
         gameObject.GetComponent<ObjectInteraction>().enabled = true;
         gameObject.GetComponent<Movement>().playerAnimator.enabled = true;
         transform.position = respawnPoint.transform.position;
