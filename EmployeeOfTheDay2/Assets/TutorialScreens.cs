@@ -9,6 +9,11 @@ public class TutorialScreens : MonoBehaviour
     public GameObject tutorialScreen1;
     public GameObject tutorialScreen2;
 
+    private void Awake()
+    {
+        Time.timeScale = 0f;
+    }
+
     public void closeScreenOne()
     {
         tutorialScreen1.SetActive(false);
